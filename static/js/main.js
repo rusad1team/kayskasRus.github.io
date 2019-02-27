@@ -4,8 +4,24 @@ $(document).ready(function () {
     	$('.js-portfolio-slider').slick({
     		slidesToShow: 3,
     		prevArrow: '.slider-nav--prev',
-    		nextArrow: '.slider-nav--next'
-    	});
+    		nextArrow: '.slider-nav--next',
+            responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 2,
+                    autoplay: true
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    autoplay: true
+                  }
+                },
+              ]
+        }); 
     };
     let tabs = function () {
         $('.tabs-item').click(function(){
@@ -19,8 +35,23 @@ $(document).ready(function () {
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  arrows: false,
-		  fade: true,
-		  asNavFor: '.js-slider-small'
+		  asNavFor: '.js-slider-small',
+            responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 1,
+                    asNavFor: false,
+                    autoplay: true
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                  }
+                },
+              ]
 		});
 		$('.js-slider-small').slick({
 		  slidesToShow: 4,
@@ -28,10 +59,44 @@ $(document).ready(function () {
 		  asNavFor: '.js-slider-big',
 		  vertical: true,
 		  focusOnSelect: true,
-		  arrows: false
+		  arrows: false,
 		});	
     };
+
+    let sandwich = function() {
+        $('.sandwich').on('click', function(){
+            $(this).toggleClass('sandwich--active');
+            $('.nav ').slideToggle();
+        });
+    };
+    let scrollTotop = function() {
+         $(window).scroll(function(){
+        if($(this).scrollTop() > 200) {
+            $('.scrollToTop').fadeIn();
+        }else {
+            $('.scrollToTop').fadeOut();
+        }
+     });
+        $('.scrollToTop').click(function(){
+        $('html,body').animate({scrollTop: 0});
+    });
+    };
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
     portfolioSlider();
     tabs();
+    scrollTotop();
     bigSlider();
+    sandwich();
 });

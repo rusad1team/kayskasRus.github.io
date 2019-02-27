@@ -37,14 +37,14 @@
                 <div class="sandwich-line sandwich-line--middle"></div>
                 <div class="sandwich-line sandwich-line--bottom"></div>
               </div>
-              <nav class="nav">
+              <nav class="nav" id="menu">
                 <ul class="nav-list">
                   <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Обо Мне</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#" id="portfolio">Новости</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#" id="portfolio">Портфолио</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#" id="portfolio">Галлерея</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#s-about">Обо Мне</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#s-portfolio" id="portfolio">Мои Достижения</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#s-news" id="portfolio">Новости</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#s-programs" id="portfolio">Обучение</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#s-contacts">Контакты</a></li>
                 </ul>
               </nav>
               <form class="search">
@@ -76,7 +76,7 @@
         </div>
       </header>
       <div class="content">
-        <section class="s-about">
+        <section class="s-about" id="s-about">
           <div class="container">
             <div class="about">
               <div class="about-imgWrapper"><img class="about-img" src="static/images/content/s-about/img1.jpg" alt=""></div>
@@ -89,7 +89,7 @@
             </div>
           </div>
         </section>
-        <section class="s-portfolio">
+        <section class="s-portfolio" id="s-portfolio">
           <h2 class="section-title">МОИ ДОСТИЖЕНИЯ</h2>
           <div class="container">
             <div class="portfolio">
@@ -117,58 +117,68 @@
             </div>
           </div>
         </section>
-        <section class="s-news">
+        <section class="s-news" id="s-news">
           <h2 class="section-title">Новости</h2>
           <div class="container">
             <div class="news">
               <div class="news-item news-item__big">
                 <div class="js-slider-big">
                   <div class="news-item--wrapper">
-                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr news-item__desr--big"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ad optio minus inventore quae facilis, deserunt est tenetur temporibus at expedita soluta odit! Alias laborum, accusamus ipsa atque amet adipisci facere omnis temporibus, accusantium quia ex mollitia animi cupiditate eveniet voluptatibus odio blanditiis ullam commodi rem nisi maiores. Neque, rerum provident odit! Incidunt corrupti ipsa, magnam commodi! Aliquid doloribus natus reprehenderit saepe labore consectetur deserunt numquam necessitatibus ipsam, ad cum, facilis pariatur error dolore. Laborum voluptas quo sequi asperiores perferendis aliquid illum voluptatibus fugiat quos quisquam. Reprehenderit in, rem. Doloremque, molestiae sint. Temporibus, saepe perspiciatis possimus nisi qui fugit accusamus?</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news1.jpg" alt="Новости"></div><a class="news-item__title news-item__title--big" href="#">Педагог года - 2018</a>
+                    <p class="news-item__desr news-item__desr--big"> Победителем по итогам муниципального конкурса профессионального мастерства и общественного признания «Педагог года -2019» признана учитель английского языка Башкирского лицея №1 — Даминдарова Гульназира Рифовна! Поздравляем!!! Участниками конкурса профессионального мастерства «Педагог года – 2019» были 25 человек: воспитатели дошкольных образовательных учреждений и учителя различных школ города и района. В ходе конкурса учителя и воспитатели демонстрировали свои таланты и щедро делились педагогическим мастерством. Они проводили открытые занятия, мастер-классы, писали эссе, создавали сайты — презентации идей профессиональной деятельности, защищали образовательные проекты, вели педагогические дебаты, участвовали в работе круглых столов.<Весь коллектив лицея гордится этой по</p><a class="news-item__link" href="#">Читать Далее</a>
                   </div>
                   <div class="news-item--wrapper">
-                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr news-item__desr--big"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ad optio minus inventore quae facilis, deserunt est tenetur temporibus at expedita soluta odit! Alias laborum, accusamus ipsa atque amet adipisci facere omnis temporibus, accusantium quia ex mollitia animi cupiditate eveniet voluptatibus odio blanditiis ullam commodi rem nisi maiores. Neque, rerum provident odit! Incidunt corrupti ipsa, magnam commodi! Aliquid doloribus natus reprehenderit saepe labore consectetur deserunt numquam necessitatibus ipsam, ad cum, facilis pariatur error dolore. Laborum voluptas quo sequi asperiores perferendis aliquid illum voluptatibus fugiat quos quisquam. Reprehenderit in, rem. Doloremque, molestiae sint. Temporibus, saepe perspiciatis possimus nisi qui fugit accusamus?</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div><a class="news-item__title" href="#">Халыҡ-ара туған телдәр көнө</a>
+                    <p class="news-item__desr news-item__desr--big"> 21 февраль-Халыҡ-ара туған телдәр көнө. 1-се Башҡорт лицейында Халыҡ-ара туған телдәр көнөнә һм яҡташыбыҙ ғалим-педагог, әҙәбиәтсе, фольклорсы Марат Минһажетдиновтың 85 йыллығына арналған ҙур сара уҙғарылды. Байрамға Марат Минһажетдиновтың туғандары, Марат Минһажетдинов исемендәге премия лауреаттары, ветеран уҡытыусылар, ҡала һәм район мәктәптәренән башҡорт теле һәм әҙәбиәте уҡытыусылары, шулай уҡ “Минһажетдинов уҡыуҙары” конкурсы еңеүселәре саҡырылғайны. Марат Минһажетдиновтың бер туған һеңлеһе Башҡортостандың атҡаҙанған уҡытыусыһы Рауза Хәләф ҡыҙы ағаһының тормош юлы тураһында һөйләп үтте. Хәсибә Мөхәмәҙи ҡыҙы «Минһажетдиновтарҙың уҡытыусылар династияһы»менән таныштырып үтте. Марат Хәләф улының студенттары Алик Һибәт улы Байғарин, Зөһрә Алсынбай ҡыҙы Бүләкова мауыҡтырғыс итеп студент йылдары тураһындағы иҫтәлектәре менән бүлеште.«Баласаҡ» ансамбле(етәксеһе Гөлфирә Дамир ҡыҙы Ғәйнуллина) матур йырҙары, «Уралтау» студияһы (етәкселәре Азат Афзал улы һәм Фәнилә Ғәббәс ҡыҙы Буранбаевтар) һоҡланғыс бейеүе менән тамашасыларҙы таң ҡалдырҙы. Наҙгөл Ғәйфуллинаның «Халҡыма» йыры, 5г класы уҡыусыларының ихлас һөйләгән шиғырҙары байрамға йәм өҫтәне. Башҡорт теле һәм әҙәбиәте уҡытыусылары Әлфиә Фәтҡуллина,Гөлнара Ғүмәрова,Лилиә Ғәйфуллина байрамды бик оҫта итеп, юғары кимәлдә алып барҙы. Гөлсинә Ғәбитова, сараның тәжрибәле режиссеры, сценарийҙы йөкмәткеле итеп төҙөгәйне. Байрам уҡыусылар өсөн дә, уҡытыусылар өсөн дә бик фәһемле булды. Быуындар бәйләнеше бөтәбеҙгә лә бик мөһим. Оло йәштәге уҡытыусыларҙың ысын күңелдән әйтелгән аҡыллы кәңәштәре йәш быуын өсөн аманат булып ҡалыр. Сара Рәми Ғариповтың «Туған тел» шиғырын һөйләү флэшмобы менән тамамланды.</p><a class="news-item__link" href="#">Читать Далее</a>
                   </div>
                   <div class="news-item--wrapper">
-                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr news-item__desr--big"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ad optio minus inventore quae facilis, deserunt est tenetur temporibus at expedita soluta odit! Alias laborum, accusamus ipsa atque amet adipisci facere omnis temporibus, accusantium quia ex mollitia animi cupiditate eveniet voluptatibus odio blanditiis ullam commodi rem nisi maiores. Neque, rerum provident odit! Incidunt corrupti ipsa, magnam commodi! Aliquid doloribus natus reprehenderit saepe labore consectetur deserunt numquam necessitatibus ipsam, ad cum, facilis pariatur error dolore. Laborum voluptas quo sequi asperiores perferendis aliquid illum voluptatibus fugiat quos quisquam. Reprehenderit in, rem. Doloremque, molestiae sint. Temporibus, saepe perspiciatis possimus nisi qui fugit accusamus?</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news1.jpg" alt="Новости"></div><a class="news-item__title" href="#">Встреча с выпускниками -2019</a>
+                    <p class="news-item__desr news-item__desr--big"> 1 февраля 2019 года в 14 часов в Башкирском лицее № 1 прошла встреча с выпускниками. Где присутствовали выпускники 2009 года,2018,2017,2016, 2015 гг. прошла встреча в теплой дружеской атмосфере. Приветствовали выпускников ученики 5 классов с приветствием, гимнасты лицея. Обратилась к выпускникам заместитель директора по учебно воспитательной работе Галимзянова Шаура Фуатовна, ознакомила с новым оборудованием лицея, и т.д..Эксклюзивное выступление было от учителей, а также в исполнении выпускников поставлена сказка на новый лад. Выпускники рассказали о учреждениях в которых они обучаются, поделились впечатлениями о городах где проживают, дали рекомендации ученикам 11 класссов. Встреча завершилась выступлением выпускника 2009 года Юнусовым Раяном.</p><a class="news-item__link" href="#">Читать Далее</a>
                   </div>
                   <div class="news-item--wrapper">
-                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr news-item__desr--big"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ad optio minus inventore quae facilis, deserunt est tenetur temporibus at expedita soluta odit! Alias laborum, accusamus ipsa atque amet adipisci facere omnis temporibus, accusantium quia ex mollitia animi cupiditate eveniet voluptatibus odio blanditiis ullam commodi rem nisi maiores. Neque, rerum provident odit! Incidunt corrupti ipsa, magnam commodi! Aliquid doloribus natus reprehenderit saepe labore consectetur deserunt numquam necessitatibus ipsam, ad cum, facilis pariatur error dolore. Laborum voluptas quo sequi asperiores perferendis aliquid illum voluptatibus fugiat quos quisquam. Reprehenderit in, rem. Doloremque, molestiae sint. Temporibus, saepe perspiciatis possimus nisi qui fugit accusamus?</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--big"><img src="static/images/content/s-news/news1.jpg" alt="Новости"></div><a class="news-item__title" href="#">«Посвящение в лицеисты»</a>
+                    <p class="news-item__desr news-item__desr--big"> 14 декабря на базе   МБОУ Башкирский лицей №1 прошло  «Посвящение в лицеисты» для учащихся 10 классов. Мероприятие запомнится 10 классам на долгое время, а они же посветят в выпускники 11 классы в апреле 2019 года.</p><a class="news-item__link" href="#">Читать Далее</a>
                   </div>
                 </div>
               </div>
               <div class="news-item__wrapper">
                 <div class="js-slider-small">
                   <div class="news-item news-item__small">
-                    <div class="news-item__imgWrapper"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi, alias dolorem sunt accusamus atque fugiat ducimus nulla odio officia voluptatibus totam odit aspernatur eaque necessitatibus repellendus,</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--small"><img src="static/images/content/s-news/news1.jpg" alt="Новости"></div>
+                    <div class="news-item__wrapper"><a class="news-item__title" href="#">Педагог года - 2018</a>
+                      <p class="news-item__desr news-item__desr--small">  Победителем по итогам муниципального конкурса профессионального мастерства и общественного признания «Педагог года -2019»</p>
+                    </div>
                   </div>
                   <div class="news-item news-item__small">
-                    <div class="news-item__imgWrapper"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi, alias dolorem sunt accusamus atque fugiat ducimus nulla odio officia voluptatibus totam odit aspernatur eaque necessitatibus repellendus,</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--small"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
+                    <div class="news-item__wrapper"><a class="news-item__title" href="#">Халыҡ-ара туған телдәр көнө</a>
+                      <p class="news-item__desr news-item__desr--small">  21 февраль-Халыҡ-ара туған телдәр көнө. 1-се Башҡорт лицейында Халыҡ-ара туған телдәр көнөнә һм яҡташыбыҙ ғалим-педагог, әҙәбиәтсе,</p>
+                    </div>
                   </div>
                   <div class="news-item news-item__small">
-                    <div class="news-item__imgWrapper"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi, alias dolorem sunt accusamus atque fugiat ducimus nulla odio officia voluptatibus totam odit aspernatur eaque necessitatibus repellendus,</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--small"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
+                    <div class="news-item__wrapper"><a class="news-item__title" href="#">Встреча с выпускниками -2019</a>
+                      <p class="news-item__desr news-item__desr--small">  1 февраля 2019 года в 14 часов в Башкирском лицее № 1 прошла встреча с выпускниками. Где присутствовали выпускники 2009 года,2018,2017,2016, 2015 гг. </p>
+                    </div>
                   </div>
                   <div class="news-item news-item__small">
-                    <div class="news-item__imgWrapper"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi, alias dolorem sunt accusamus atque fugiat ducimus nulla odio officia voluptatibus totam odit aspernatur eaque necessitatibus repellendus,</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--small"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
+                    <div class="news-item__wrapper"><a class="news-item__title" href="#">«Посвящение в лицеисты»</a>
+                      <p class="news-item__desr news-item__desr--small">  14 декабря на базе   МБОУ Башкирский лицей №1 прошло  «Посвящение в лицеисты» для учащихся 10 классов. Мероприятие запомнится 10 классам на </p>
+                    </div>
                   </div>
                   <div class="news-item news-item__small">
-                    <div class="news-item__imgWrapper"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
-                    <p class="news-item__desr"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi, alias dolorem sunt accusamus atque fugiat ducimus nulla odio officia voluptatibus totam odit aspernatur eaque necessitatibus repellendus,</p>
+                    <div class="news-item__imgWrapper news-item__imgWrapper--small"><img src="static/images/content/s-news/news.jpg" alt="Новости"></div>
+                    <div class="news-item__wrapper"><a class="news-item__title" href="#">Педагог года - 2018</a>
+                      <p class="news-item__desr news-item__desr--small"> Победителем по итогам муниципального конкурса профессионального мастерства и общественного признания «Педагог года -2019»</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="s-programs">
+        <section class="s-programs" id="s-programs">
           <h2 class="section-title">Обучение</h2>
           <div class="container">
             <div class="programs">
@@ -180,18 +190,10 @@
                   <li class="tabs-item" show-tab="tab-tests">ТЕСТЫ</li>
                 </ul>
                 <div class="tabs-body">
-                  <div class="tab tab-workPrograms tab--active">
-                    <1></1>
-                  </div>
-                  <div class="tab tab-lessons">
-                    <2></2>
-                  </div>
-                  <div class="tab tab-olimpiads">
-                    <3></3>
-                  </div>
-                  <div class="tab tab-tests">
-                    <4></4>
-                  </div>
+                  <div class="tab tab-workPrograms tab--active"><a class="tab-link" href="http://damindarova88.ucoz.net/ktp_2019_moj.pdf" target="__blank">Рабочая программа по учебному курсу: английский язык</a></div>
+                  <div class="tab tab-lessons"><a class="tab-link" href="http://damindarova88.ucoz.net/urok/konspet_uroka_9_klasse_na_emu_prazdniki-hogmanay.pdfs" target="__blank">Topic: Hogmanay</a><a class="tab-link" href="http://damindarova88.ucoz.net/urok/prezentacija_7_chudes_sveta.pdf" target="__blank">Семь чудес света</a><a class="tab-link" href="http://damindarova88.ucoz.net/ktp_2019_moj.pdf" target="__blank">Использование скороговорок и стишков на уроке английского языка</a><a class="tab-link" href="http://damindarova88.ucoz.net/kak_napisat_biznes_pismo.pdfs" target="__blank">Как написать бизнес письмо</a><a class="tab-link" href="http://damindarova88.ucoz.net/ktp_2019_moj.pdf" target="__blank">Современный урок иностранного языка</a><a class="tab-link" href="http://damindarova88.ucoz.net/singapurskaja_metodika.pdf" target="__blank">Сингапурская методика</a><a class="tab-link" href="http://damindarova88.ucoz.net/ktp_2019_moj.pdf" target="__blank">Видеоурок. Глагол "to be" в настоящем времени </a><a class="tab-link tab-link--green" href="https://cloud.mail.ru/public/m64v/PASZLh8o6" target="__blank">Фрукты на английском языке. Видеоурок.</a><a class="tab-link tab-link--green" href="https://cloud.mail.ru/public/5U4t/RTonENeGr" target="__blank">Овощи на английском языке. Видеоурок.</a><a class="tab-link tab-link--green" href="https://cloud.mail.ru/public/KpyH/EtBW3ReTD" target="__blank">Местоимение. Видеоурок.</a><a class="tab-link tab-link--green" href="https://cloud.mail.ru/public/KpyH/EtBW3ReTD" target="__blank">Видеоурок. Важные глаголы</a><a class="tab-link tab-link--green" href="https://cloud.mail.ru/public/DhLT/deBKeBTcK" target="__blank">Цвета на английском языке. Видео.</a></div>
+                  <div class="tab tab-olimpiads"><a class="tab-link" href="http://damindarova88.ucoz.net/olimpiadnye_zadanija_dlja_8_klassov.pdf" target="__blank">Олимпиадные задания по английскому языку для обучающихся 8 классов</a></div>
+                  <div class="tab tab-tests"><a class="tab-link" href="http://damindarova88.ucoz.net/startovye_kontrolnye_raboty.pdf">Стартовые контрольные работы по английскому языку</a><a class="tab-link" href="http://damindarova88.ucoz.net/olimpiadnye_zadanija_dlja_8_klassov.pdf">Олимпиадные задания по английскому языку для обучающихся 8 классов</a></div>
                 </div>
               </div>
             </div>
@@ -223,7 +225,7 @@
             </div>
           </div>
         </section>
-        <section class="s-contacts">
+        <section class="s-contacts" id="s-contacts">
           <svg class="svg-sprite-icon icon-telegram section-icon">
             <use xlink:href="static/images/svg/symbol/sprite.svg#telegram"></use>
           </svg>
@@ -247,7 +249,16 @@
           </div>
         </section>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="copyright">Rus kaysas 2019</div>
+        </div><a class="scrollToTop" href="#">
+          <div class="scrollToTop-wrapper">
+            <svg class="svg-sprite-icon icon-arrow-right scrollToTop__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+            </svg>
+          </div></a>
+      </footer>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
