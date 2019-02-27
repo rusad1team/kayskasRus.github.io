@@ -10,14 +10,16 @@ $(document).ready(function () {
                   breakpoint: 800,
                   settings: {
                     slidesToShow: 2,
-                    autoplay: true
+                    autoplay: true,
+                     centerMode: true
                   }
                 },
                 {
                   breakpoint: 500,
                   settings: {
                     slidesToShow: 1,
-                    autoplay: true
+                    autoplay: true,
+                    centerMode: true
                   }
                 },
               ]
