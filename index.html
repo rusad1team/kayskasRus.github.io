@@ -1,619 +1,785 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-  <head>
-    <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
-  </head>
-  <body class="index-page">
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-top">
-          <div class="container">
-            <div class="location header-top__location">
-              <div class="location-header">
-                <svg class="svg-sprite-icon icon-global location-globalIcon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#global"></use>
-                </svg><span class="location-title">Ваш город:</span>
-                <div class="location-current__wrapper"><span class="location-current"> Нижний Новгород</span>
-                  <svg class="svg-sprite-icon icon-arrow-down location-arrowIcon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-down"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="location-body">
-                <div class="location-question"><span class="location-question__text">Ваш город Нижний Новгород?</span>
-                  <div class="location-question__buttons">
-                    <div class="btn location-question__btn" data-location="yes">Да</div>
-                    <div class="btn btn-white location-question__btn" data-location="no">Изменить</div>
-                  </div>
-                </div>
-                <div class="location-choose">
-                  <div class="location-choose__header">
-                    <input class="location-choose__input" placeholder="Выберите ваш город">
-                  </div>
-                  <div class="location-choose__body">
-                    <ul class="location-choose__list">
-                      <li class="location-choose__item">Москва</li>
-                      <li class="location-choose__item">Санкт-Петербург</li>
-                      <li class="location-choose__item">Екатеринбург</li>
-                      <li class="location-choose__item">Нижний Новгород</li>
-                      <li class="location-choose__item">Казань</li>
-                      <li class="location-choose__item">Новосибирск</li>
-                      <li class="location-choose__item">Челябинск</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Фитнес клуб</title>
+</head>
+<body>
+<header class="header-container">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#pre-word">Ваша цель</a></li>
+            <li><a href="#call-link">Расписание и программы</a></li>
+        </ul>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Shantel">
         </div>
-        <div class="header-middle">
-          <div class="container">
-            <div class="header-middle__wrapper">
-              <div class="logo"><img class="logo-img" src="static/images/general/logo.svg" alt="Huawei | Honor logo"></div>
-              <div class="info header-middle__info">
-                <div class="info-item">
-                  <svg class="svg-sprite-icon icon-location info-item__icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
-                  </svg><span class="info-item__text">г. Нижний Новгород, Варварская 27/8, м.Горьковская</span>
-                </div>
-                <div class="info-item">
-                  <svg class="svg-sprite-icon icon-clock info-item__icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#clock"></use>
-                  </svg><span class="info-item__text">Режим работы c 9:00 до 20:00, без обеда и выходных</span>
-                </div>
-              </div>
-            </div>
-            <div class="header-middle__wrapper">
-              <div class="order-callback header-middle__order-callback">
-                <div class="order-callback__item"><span class="order-callback__text">Прием звонков ежедневно круглосуточно</span><a class="order-callback__phone" href="tel:+78314206570">+7 (831) 420-65-70</a></div><a class="btn order-callback__btn js-popap-link" href="#popap-consulitation">Связаться с нами</a>
-              </div>
-            </div>
-          </div>
+        <ul>
+            <li><a href="#tickets">Стоимость абонементов</a></li>
+            <li><a href="#feed-back">Связь с нами</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile">
+        <div class="logo">
+            <img src="img/logo.png" alt="Shantel">
         </div>
-        <div class="header-bottom">
-          <div class="container">
-            <div class="sandwich"><span class="sandwich-line"></span></div>
-            <div class="nav-wrapper">
-              <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-                  <li class="nav-item__dropDown nav-item"><a class="nav-link nav-link__dropDown" href="#">Ремонтируем
-                      <svg class="svg-sprite-icon icon-arrow-down nav-icon">
-                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-down"></use>
-                      </svg></a>
-                    <div class="nav-dropDown">
-                      <ul class="nav-dropDown__list">
-                        <li class="nav-dropDown__item"><a class="nav-dropDown__link nav-link" href="#">ссылка 1</a></li>
-                        <li class="nav-dropDown__item"><a class="nav-dropDown__link nav-link" href="#">ссылка 2</a></li>
-                        <li class="nav-dropDown__item"><a class="nav-dropDown__link nav-link" href="#">ссылка 3</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Сотрудничество</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Гарантии</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+        <div class="label">
+            <span>Меню</span>
+            <img src="img/heart.svg" alt="Heart icon">
+        </div>
+        <div class="menu">
+            <div class="fp">
+                <ul>
+                    <li class="active pre-word"><a href="#pre-word">Ваша цель</a></li>
+                    <li class="schedule"><a href="#call-link">Расписание и программы</a></li>
+                    <li class="tickets"><a href="#tickets">Стоимость абонементов</a></li>
+                    <li class="feed-back"><a href="#feed-back">Связь с нами</a></li>
                 </ul>
-              </nav>
+                <div class="menu-call">
+                    <a href="tel:+37368444804">0 68 444 804</a>
+                    <span>На связи с 9:00 по 19:00</span>
+                </div>
             </div>
-            <div class="search header-bottom__search">
-              <svg class="svg-sprite-icon icon-search search-icon">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
-              </svg>
-              <div class="search-body">
-                <form class="search-form" action="">
-                  <div class="search-input__wrapper">
-                    <input class="search-input" type="text" placeholder="поиск">
-                    <div class="search-clear">
-                      <svg class="svg-sprite-icon icon-close search-clearIcon">
-                        <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <input class="btn btn-search" type="submit" value="Найти">
-                </form>
-              </div>
+            <div class="sp">
+                <div class="address">
+                    <img src="img/point.svg" alt="Map label">
+                    <p>Г. Бельцы, ул. Хотинская 17, ТЦ "Элит 2", третий этаж</p>
+                </div>
+                <div class="foot">
+                    <a href="https://www.facebook.com/shantel.club.page" class="fb">
+                        <img src="img/fb.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/shantel.fitness/" class="inst">
+                        <img src="img/inst.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" class="yt">
+                        <img src="img/yt.svg" alt="YouTube">
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </header>
-      <div class="content">
-        <section class="s-banner">
-          <div class="container">
-            <div class="banner">
-              <div class="navigation banner-navigation--prev navigation--prev">
-                <svg class="svg-sprite-icon icon-prev navigation-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                </svg>
-              </div>
-              <div class="navigation banner-navigation--next navigation--next">
-                <svg class="svg-sprite-icon icon-next navigation-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                </svg>
-              </div>
-              <div class="slider-dots slider-dots--absolute"></div>
-              <div class="js-slider-banner">
-                <div class="banner-item">
-                  <div class="banner-item__wrapper"><img class="banner-item__img" src="static/images/content/s-banner/img1.png" alt="Ремонт Huawei">
-                    <div class="banner-item__textWrapper">
-                      <h2 class="banner-item__title">Ремонт Huawei</h2><a class="btn banner-item__btn" href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="banner-item">
-                  <div class="banner-item__wrapper"><img class="banner-item__img" src="static/images/content/s-banner/img2.png" alt="Ремонт Honer">
-                    <div class="banner-item__textWrapper">
-                      <h2 class="banner-item__title">Ремонт honor</h2><a class="btn banner-item__btn" href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="banner-item">
-                  <div class="banner-item__wrapper"><img class="banner-item__img" src="static/images/content/s-banner/img1.png" alt="Ремонт Huawei">
-                    <div class="banner-item__textWrapper">
-                      <h2 class="banner-item__title">Ремонт Huawei</h2><a class="btn banner-item__btn" href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="banner-item">
-                  <div class="banner-item__wrapper"><img class="banner-item__img" src="static/images/content/s-banner/img2.png" alt="Ремонт Honer">
-                    <div class="banner-item__textWrapper">
-                      <h2 class="banner-item__title">Ремонт honor</h2><a class="btn banner-item__btn" href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-reccomend">
-          <div class="container">
-            <div class="reccomend">
-              <h2 class="section-title">Мы ремонтируем</h2>
-              <div class="reccomend-top"><a class="reccomend-top__item" href="#">
-                  <h3 class="reccomend-top__title">Смартфоны <strong>Huawei</strong></h3></a><a class="reccomend-top__item reccomend-top__item-honor" href="#">
-                  <h3 class="reccomend-top__title">Смартфоны <strong>Honor</strong></h3>
-                  <h3 class="reccomend-top__title"> </h3></a></div>
-              <div class="reccomend-bottom"><a class="reccomend-bottom__item" href="#">
-                  <div class="reccomend-bottom__imgWrapper"><img class="reccomend-bottom__img" src="static/images/content/s-reccomend/bottom/img1.png" alt="Планшеты"></div>
-                  <h3 class="reccomend-bottom__title">Планшеты</h3>
-                  <div class="reccomend-bottom__hoverInfo"><span class="reccomend-bottom__span">Подробнее</span>
-                    <svg class="svg-sprite-icon icon-arrow-right reccomend-bottom__icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div></a><a class="reccomend-bottom__item" href="#">
-                  <div class="reccomend-bottom__imgWrapper"><img class="reccomend-bottom__img" src="static/images/content/s-reccomend/bottom/img2.png" alt="Ноутбуки"></div>
-                  <h3 class="reccomend-bottom__title">Ноутбуки</h3>
-                  <div class="reccomend-bottom__hoverInfo"><span class="reccomend-bottom__span">Подробнее</span>
-                    <svg class="svg-sprite-icon icon-arrow-right reccomend-bottom__icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div></a><a class="reccomend-bottom__item" href="#">
-                  <div class="reccomend-bottom__imgWrapper"><img class="reccomend-bottom__img" src="static/images/content/s-reccomend/bottom/img3.png" alt="Часы"></div>
-                  <h3 class="reccomend-bottom__title">Часы</h3>
-                  <div class="reccomend-bottom__hoverInfo"><span class="reccomend-bottom__span">Подробнее</span>
-                    <svg class="svg-sprite-icon icon-arrow-right reccomend-bottom__icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </div></a></div>
-              <div class="reccomend-btnWrapper"><a class="btn reccomend-btn" href="#">Обратиться к нам</a></div>
-            </div>
-          </div>
-        </section>
-        <section class="s-ourPortfolio">
-          <div class="container">
-            <h2 class="section-title">Пример работ</h2>
-            <div class="ourPortfolio tabs">
-              <ul class="tabs-navigation">
-                <li class="tabs-navigation__item tabs-navigation__item--active" show-tab="tab-phone">Смартфоны</li>
-                <li class="tabs-navigation__item" show-tab="tab-notebook">Ноутбуки</li>
-                <li class="tabs-navigation__item" show-tab="tab-tablet">Планшеты</li>
-                <li class="tabs-navigation__item" show-tab="tab-clock">Часы</li>
-              </ul>
-              <div class="tabs-body">
-                <div class="tab tab--active tab-phone">
-                  <div class="navigation navigation--grey ourPortfolio-navigation--prev navigation--prev">
-                    <svg class="svg-sprite-icon icon-prev navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                    </svg>
-                  </div>
-                  <div class="navigation navigation--grey ourPortfolio-navigation--next navigation--next">
-                    <svg class="svg-sprite-icon icon-next navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                    </svg>
-                  </div>
-                  <div class="ourPortfolio-sliderWrapper">
-                    <div class="js-ourPortfolio-slider"><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a></div>
-                  </div>
-                </div>
-                <div class="tab tab-notebook">
-                  <div class="navigation navigation--grey ourPortfolio-navigation--prev1 navigation--prev">
-                    <svg class="svg-sprite-icon icon-prev navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                    </svg>
-                  </div>
-                  <div class="navigation navigation--grey ourPortfolio-navigation--next1 navigation--next">
-                    <svg class="svg-sprite-icon icon-next navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                    </svg>
-                  </div>
-                  <div class="ourPortfolio-sliderWrapper">
-                    <div class="js-ourPortfolio-slider2"><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a></div>
-                  </div>
-                </div>
-                <div class="tab tab-tablet">
-                  <div class="navigation navigation--grey ourPortfolio-navigation--prev2 navigation--prev">
-                    <svg class="svg-sprite-icon icon-prev navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                    </svg>
-                  </div>
-                  <div class="navigation navigation--grey ourPortfolio-navigation--next2 navigation--next">
-                    <svg class="svg-sprite-icon icon-next navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                    </svg>
-                  </div>
-                  <div class="ourPortfolio-sliderWrapper">
-                    <div class="js-ourPortfolio-slider3"><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a></div>
-                  </div>
-                </div>
-                <div class="tab tab-clock">
-                  <div class="navigation navigation--grey ourPortfolio-navigation--prev3 navigation--prev">
-                    <svg class="svg-sprite-icon icon-prev navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                    </svg>
-                  </div>
-                  <div class="navigation navigation--grey ourPortfolio-navigation--next3 navigation--next">
-                    <svg class="svg-sprite-icon icon-next navigation-icon">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                    </svg>
-                  </div>
-                  <div class="ourPortfolio-sliderWrapper">
-                    <div class="js-ourPortfolio-slider4"><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a><a class="ourPortfolio-item" href="#">
-                        <div class="ourPortfolio-item__details"></div><img class="ourPortfolio-item__img" src="static/images/content/s-portfolio/img1.png" alt="Смартфоны Ремонт"></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-formFirst">
-          <div class="container">
-            <div class="formFirst">
-              <div class="form-wrapper form-wrapper-first">
-                <div class="form-image__wrapper"><img class="form-image" src="static/images/content/s-formsImages/laptops.png" alt="Ремонт Ноутбуков"></div>
-                <form class="form formFirst form-js" method="post" enctype="multipart/form-data" id="form_callme">
-                  <h2 class="form-title">Оставьте заявку</h2>
-                  <p class="form-text">и узнайте стоимость ремонта за 5 минут!</p>
-                  <input class="form-name form-info" type="text" placeholder="Ваше Имя">
-                  <div class="input--custom">
-                    <input class="validate" type="text" name="phone" required>
-                    <label for="phone" data-mark="*">+7(___)-___-__-__</label>
-                  </div>
-                  <input class="form-submitBtn form-button" type="submit"><a class="form-confidentiality" href="#">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных</a>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-services">
-          <div class="container">
-            <h2 class="section-title">Обратившись к нам, Вы получите:</h2>
-            <div class="services">
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/settings.png" alt="Ремонт"></div>
-                <h3 class="services-item__title">КАЧЕСТВЕННЫЙ РЕМОНТ</h3>
-                <p class="services-item__text">Диагностика на профессиональном оборудовании и точное устранение неисправности.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/cpu.png" alt="Оригинальные Запчасти"></div>
-                <h3 class="services-item__title">ОРИГИНАЛЬНЫЕ ЗАПЧАСТИ</h3>
-                <p class="services-item__text">Только качественные комплектующие от надежных поставщиков.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/shipping.png" alt="Бесплатно"></div>
-                <h3 class="services-item__title">БЕСПЛАТНОГО КУРЬЕРА</h3>
-                <p class="services-item__text">Который заберет неисправный гаджет в удобном месте в черте города.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/data.png" alt="Диагностика"></div>
-                <h3 class="services-item__title">ПОЛНУЮ ДИАГНОСТИКУ</h3>
-                <p class="services-item__text">Которая точно выявит причину и масштаб поломки.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/discount.png" alt="Скидка"></div>
-                <h3 class="services-item__title">СКИДКУ 10% НА УСЛУГИ</h3>
-                <p class="services-item__text">Мы будем рады помочь Вам снова и предоставим скидку на повторное обращение.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/agreement.png" alt="Договор"></div>
-                <h3 class="services-item__title">ДОГОВОР НА РЕМОНТ</h3>
-                <p class="services-item__text">Договор станет юридической основой наших гарантийных обязательств.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/clock.png" alt="Сроки"></div>
-                <h3 class="services-item__title">РЕМОНТ ОТ 30 МИНУТ</h3>
-                <p class="services-item__text">Сроки заранее оговариваются с клиентом и не меняются по ходу ремонта.</p>
-              </div>
-              <div class="services-item">
-                <div class="services-item__imgWrapper"><img class="services-item__img" src="static/images/content/s-services/medal.png" alt="Гарантия"></div>
-                <h3 class="services-item__title">ГАРАНТИЮ НА УСЛУГИ</h3>
-                <p class="services-item__text">Предоставляем гарантию до 3 месяцев для вашей уверенности.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-serviceCenter">
-          <div class="container">
-            <div class="serviceCenter">
-              <h2 class="section-title section-title-white">Сервисный центр Huawei</h2>
-              <p class="serviceCenter-text">Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Таким образом новая модель организационной деятельности способствует подготовки и реализации направлений прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Равным образом сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.</p><a class="btn serviceCenter-btn" href="#">Подробнее</a>
-            </div>
-          </div>
-        </section>
-        <section class="s-formSecond">
-          <div class="container">
-            <div class="formSecond">
-              <div class="form-wrapper form-wrapper-second">
-                <div class="form-image__wrapper form-image__wrapper-second"><img class="form-image" src="static/images/content/s-formsImages/phone.png" alt="Ремонт Honor"></div>
-                <form class="form formFirst" action="">
-                  <h2 class="form-title">Оставьте заявку</h2>
-                  <p class="form-text">и узнайте стоимость ремонта за 5 минут!</p>
-                  <input class="form-name form-info" type="text" placeholder="Ваше Имя">
-                  <div class="input--custom">
-                    <input type="text" name="phone" required>
-                    <label for="phone" data-mark="*">+7(___)-___-__-__</label>
-                  </div>
-                  <input class="form-submitBtn form-submitBtn--white" type="submit"><a class="form-confidentiality" href="#">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных</a>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-reviews">
-          <div class="container">
-            <h2 class="section-title">Отзывы</h2>
-            <div class="reviews">
-              <div class="navigation navigation--grey reviews-navigation--prev navigation--prev">
-                <svg class="svg-sprite-icon icon-prev navigation-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                </svg>
-              </div>
-              <div class="navigation navigation--grey reviews-navigation--next navigation--next">
-                <svg class="svg-sprite-icon icon-next navigation-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                </svg>
-              </div>
-              <div class="js-reviews-slider">
-                <div class="reviews-wrapper">
-                  <div class="reviews-item">
-                    <div class="reviews-item__personalCard">
-                      <div class="reviews-item__imgWrapper"><img src="static/images/content/s-reviews/img1.png" alt="Фотография Клиента"></div>
-                      <div class="reviews-item__spanText"><span class="reviews-item__name">Елена, 34 года</span><span class="reviews-item__town">Нижний новгород</span></div>
-                    </div>
-                    <div class="reviews-item__textWrapper">
-                      <p class="reviews-item__text">Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. Повседневная практика показывает, что консультация с широким активом требуют определения...</p>
-                      <div class="reviews-item__btn-wrapper"><a class="btn reviews-item__btn" href="#">Читать полностью</a><a class="btn btn-withICon reviews-item__btn btn-white" href="#">Оригинал отзыва
-                          <svg class="svg-sprite-icon icon-search btn--icon">
-                            <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
-                          </svg></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews-wrapper">
-                  <div class="reviews-item">
-                    <div class="reviews-item__personalCard">
-                      <div class="reviews-item__imgWrapper"><img src="static/images/content/s-reviews/img1.png" alt="Фотография Клиента"></div>
-                      <div class="reviews-item__spanText"><span class="reviews-item__name">Елена, 34 года</span><span class="reviews-item__town">Нижний новгород</span></div>
-                    </div>
-                    <div class="reviews-item__textWrapper">
-                      <p class="reviews-item__text">Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. Повседневная практика показывает, что консультация с широким активом требуют определения...</p>
-                      <div class="reviews-item__btn-wrapper"><a class="btn reviews-item__btn" href="#">Читать полностью</a><a class="btn btn-withICon reviews-item__btn btn-white" href="#">Оригинал отзыва
-                          <svg class="svg-sprite-icon icon-search btn--icon">
-                            <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
-                          </svg></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sliderReviews-dots"></div>
-            </div>
-          </div>
-        </section>
-        <section class="s-ourMasters">
-          <div class="container">
-            <h2 class="section-title">Наши мастера</h2>
-            <div class="ourMasters">
-              <div class="ourMasters-wrapper">
-                <div class="navigation navigation--grey ourMasters-navigation--prev navigation--prev">
-                  <svg class="svg-sprite-icon icon-prev navigation-icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#prev"></use>
-                  </svg>
-                </div>
-                <div class="navigation navigation--grey ourMasters-navigation--next navigation--next">
-                  <svg class="svg-sprite-icon icon-next navigation-icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
-                  </svg>
-                </div>
-                <div class="js-ourMasters-slider">
-                  <div class="ourMasters-item">
-                    <div class="ourMaster-linkWrapper">
-                      <div class="ourMasters-item__imgWraper"><img class="ourMasters__img" src="static/images/content/s-ourMasters/img1.png" alt="Наши Мастера"></div><span class="ourMasters-title">Константин Константинов</span><span class="ourMasters-experience">Стаж 5 лет</span><a class="btn ourMasters-btn js-popap-link" href="#popap-consulitation">Обратиться</a>
-                    </div>
-                  </div>
-                  <div class="ourMasters-item">
-                    <div class="ourMaster-linkWrapper">
-                      <div class="ourMasters-item__imgWraper"><img class="ourMasters__img" src="static/images/content/s-ourMasters/img1.png" alt="Наши Мастера"></div><span class="ourMasters-title">Константин Константинов</span><span class="ourMasters-experience">Стаж 5 лет</span><a class="btn ourMasters-btn js-popap-link" href="#popap-consulitation">Обратиться</a>
-                    </div>
-                  </div>
-                  <div class="ourMasters-item">
-                    <div class="ourMaster-linkWrapper">
-                      <div class="ourMasters-item__imgWraper"><img class="ourMasters__img" src="static/images/content/s-ourMasters/img1.png" alt="Наши Мастера"></div><span class="ourMasters-title">Константин Константинов</span><span class="ourMasters-experience">Стаж 5 лет</span><a class="btn ourMasters-btn js-popap-link" href="#popap-consulitation">Обратиться</a>
-                    </div>
-                  </div>
-                  <div class="ourMasters-item">
-                    <div class="ourMaster-linkWrapper">
-                      <div class="ourMasters-item__imgWraper"><img class="ourMasters__img" src="static/images/content/s-ourMasters/img1.png" alt="Наши Мастера"></div><span class="ourMasters-title">Константин Константинов</span><span class="ourMasters-experience">Стаж 5 лет</span><a class="btn ourMasters-btn js-popap-link" href="#popap-consulitation">Обратиться</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="ourMasterSlider-dots"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-stageOfWork">
-          <div class="container">
-            <h2 class="section-title">Этапы работы</h2>
-            <div class="stageOfWork">
-              <div class="stageOfWork-wrapper">
-                <div class="stageOfWork-item stageOfWork-item--blue stageOfWork-item--first"><span class="stageOfWork-number">1</span>
-                  <h3 class="stageOfWork-title">Заявка на ремонт</h3>
-                  <p class="stageOfWork-text">Дежурный оператор принимает вашу заявку по телефону, указанному на сайте.</p><a class="btn btn-white stageOfWork-btn" href="#">Оставить заявку</a>
-                </div>
-                <div class="stageOfWork-item stageOfWork-item--first stageOfWork-item--white"><span class="stageOfWork-number">2</span>
-                  <h3 class="stageOfWork-title">ДИАГНОСТИКА</h3>
-                  <p class="stageOfWork-text">Клиент самостоятельно или с помощью курьера доставляет неисправный гаджет к нам, после чего проводится полная проверка устройства и называется точная цена услуги.</p>
-                </div>
-              </div>
-              <div class="stageOfWork-wrapper">
-                <div class="stageOfWork-item"><span class="stageOfWork-number">4</span>
-                  <h3 class="stageOfWork-title">итог</h3>
-                  <p class="stageOfWork-text">После окончания ремонта оператор связывается с вами, чтобы договориться о времени передачи исправной техники владельцу.</p>
-                </div>
-                <div class="stageOfWork-item stageOfWork-item--blue stageOfWork-item--first stageOfWork-item--thred"><span class="stageOfWork-number">3</span>
-                  <h3 class="stageOfWork-title">ремонт</h3>
-                  <p class="stageOfWork-text">После окончания ремонта оператор связывается с вами, чтобы договориться о времени передачи исправной техники владельцу.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="s-formThred">
-          <div class="container">
-            <div class="formThred">
-              <div class="form-wrapper form-wrapper-first">
-                <div class="form-image__wrapper form-image__wrapper-therd"><img class="form-image" src="static/images/content/s-formsImages/tablet.png" alt="Ремонт Планшетов"></div>
-                <form class="form formFirst" action="">
-                  <h2 class="form-title">Оставьте заявку</h2>
-                  <p class="form-text">и узнайте стоимость ремонта за 5 минут!</p>
-                  <input class="form-name form-info" type="text" placeholder="Ваше Имя">
-                  <div class="input--custom">
-                    <input type="text" name="message" required>
-                    <label for="message" data-mark="*">+7(___)-___-__-__</label>
-                  </div>
-                  <input class="form-submitBtn" type="submit"><a class="form-confidentiality" href="#">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных</a>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <footer class="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="footer-top__wrapper">
-              <div class="logo"><img class="logo-img" src="static/images/general/logo.svg" alt="Huawei | Honor logo"></div>
-              <div class="info footer-middle__info">
-                <div class="info-item">
-                  <svg class="svg-sprite-icon icon-location info-item__icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
-                  </svg><span class="info-item__text">г. Нижний Новгород, Варварская 27/8, м.Горьковская</span>
-                </div>
-                <div class="info-item">
-                  <svg class="svg-sprite-icon icon-clock info-item__icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#clock"></use>
-                  </svg><span class="info-item__text">Режим работы c 9:00 до 20:00, без обеда и выходных</span>
-                </div>
-              </div>
-            </div>
-            <div class="footer-top__wrapper">
-              <div class="order-callback header-middle__order-callback">
-                <div class="order-callback__item"><span class="order-callback__text">Прием звонков ежедневно круглосуточно</span><a class="order-callback__phone" href="tel:+78314206570">+7 (831) 420-65-70</a></div><a class="btn order-callback__btn js-popap-link" href="#popap-consulitation">Связаться с нами</a>
-              </div>
-            </div>
-          </div>
+    </nav>
+</header>
+<main>
+    <section id="pre-word">
+        <div class="words">
+            <p id="a">Худеть</p>
+            <p id="b">Качать ягодицы</p>
+            <p id="c">Укрепить здоровье</p>
+            <p id="d">Стать лучше</p>
+            <p id="e">Быть красивой</p>
+            <p id="f">Ради мотивации</p>
+            <p id="g">Поддержать форму</p>
+            <p id="h">Танцевать</p>
+            <p id="i">Развлечься</p>
+            <p id="j">Сделать растяжку</p>
+            <p id="k">Тянуть железо</p>
         </div>
-        <div class="footer-middle">
-          <div class="container">
-            <div class="footer-middle__item">
-              <h2 class="footer-middle__title">Сервисный центр Huawei</h2>
-              <p class="footer-middle__text">Только мастера с колоссальным опытом работы в этой сфере смогут гарантированно вернуть вашу технику к жизни даже в самой сложной ситуации. Если вы хотите избавиться от неисправностей надолго, обращайтесь только...</p><a class="btn footer-middle__btn" href="#">Подробнее</a>
+        <div class="words-description">
+            <div class="slider">
+                <img src="img/goals-slides/a/slide1.jpg" alt="Slide">
+                <img src="img/goals-slides/a/slide2.jpg" alt="Slide">
+                <img src="img/goals-slides/a/slide3.jpg" alt="Slide">
             </div>
-            <div class="footer-middle__item map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8f179d88de0a5cf6d5ce5998c510ce105a734fbaeb2a3f3d29e52d135a2bd44&amp;width=100%25&amp;height=191&amp;lang=ru_RU&amp;scroll=true"></script></div>
-          </div>
+            <div class="text">
+                <p>Потеря веса происходит, но не за счет жировых клеток, а за счет мышечных белков и воды. Если вы не
+                    принимаете дополнительных мер для того, чтобы нормализовать и даже ускорить обмен веществ, организм,
+                    потеряв в первое время какое-то количество воды, продолжает существование в режиме жесткой экономии,
+                    спокойно дожидаясь окончания диеты. Естественно, запасы воды восполняются в первое же время после
+                    выхода из диеты, а вместе с ней возвращается и вес.<br/><br/>К необходимым физическим нагрузкам
+                    привыкайте постепенно, увеличивать их интенсивность надо только после того, как тело привыкнет к
+                    регулярным тренировкам. Не надо волноваться, если вначале вы не сможете выдерживать заданный темп
+                    упражнений, передохните несколько минут. В том случае, когда объем покажется вам непосильным, просто
+                    сделайте меньше подходов, но обязательно выполните все те упражнения, которые были намечены для
+                    тренировки. Боли в мышцах, которая мучает многих новичков, можно избежать, если на первой тренировке
+                    делать все упражнения по одному подходу, не перенапрягаясь и с небольшим весом. На следующих двух
+                    тренировках постепенно увеличивайте количество подходов и вес. Потом пару дней отдохните и начинайте
+                    полноценные занятия, уже не опасаясь болей в мышцах.</p>
+            </div>
         </div>
-        <div class="footer-navWrapper">
-          <div class="container">
-            <nav class="footer-nav">
-              <ul class="footer-nav__list">
-                <li class="foote-nav__item"><a class="nav-link" href="#">Главная</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">Ремонтируем</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">О компании</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">Сотрудничество</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">Гарантии</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">Новости</a></li>
-                <li class="footer-nav__item"><a class="nav-link" href="#">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="container"><span class="footer-bottom__copyright">© Huawei 2019 Все права защищены</span><span>Rus Kayskas</span><a class="footer-bottom__link" href="#">Политика конфиденциальности </a></div>
-        </div><a class="scrollToTop" href="#">
-          <div class="scrollToTop-wrapper">
-            <svg class="svg-sprite-icon icon-arrow-right scrollToTop__icon">
-              <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
-            </svg>
-          </div></a>
-      </footer>
+    </section>
+    <div class="table-toggle" id="call-link">
+        <button id="adult" type="button" class="active">Взрослые тренировки</button>
+        <button id="children" type="button">Детские тренировки</button>
     </div>
-    <div class="popup mfp-hide" id="popap-consulitation">
-      <div class="hide-on-success">
-        <div class="popup-header"><span class="popup-header__title">Получить Консультацию</span>
-          <div class="popup-close">
-            <svg class="svg-sprite-icon icon-close popup-header__icon">
-              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="popup-body">
-          <form class="form popup-form" action="">
-            <input class="form-name form-info" type="text" placeholder="Ваше Имя">
-            <div class="input--custom">
-              <input type="text" name="phone" required>
-              <label for="phone" data-mark="*">+7(___)-___-__-__</label>
+    <section id="schedule">
+        <div class="schedule-content">
+            <div class="table-container adult">
+                <div class="table">
+                    <!--Шапка-->
+                    <div class="table-row days">
+                        <div class="table-cell bare"></div>
+                        <div class="table-cell bare">ПН.</div>
+                        <div class="table-cell bare">ВТ.</div>
+                        <div class="table-cell bare">СР.</div>
+                        <div class="table-cell bare">ЧТ.</div>
+                        <div class="table-cell bare">ПТ.</div>
+                        <div class="table-cell bare">СБ.</div>
+                    </div>
+                    <!--9:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Pilates</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Pilates</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Pilates</div>
+                        <div class="table-cell table-cell-first bare"></div>
+
+                        <div class="table-cell bare time">9:00</div>
+                        <div class="table-cell table-cell-second">Zumba</div>
+                        <div class="table-cell table-cell-second">Yoga</div>
+                        <div class="table-cell table-cell-second">Zumba</div>
+                        <div class="table-cell table-cell-second">Yoga</div>
+                        <div class="table-cell table-cell-second">Zumba</div>
+                        <div class="table-cell table-cell-second bare"></div>
+
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third bare"></div>
+                    </div>
+                    <!--9:15-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+
+                        <div class="table-cell bare time">9:15</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second">Step</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second">Step</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                    </div>
+                    <!--10:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Йога Зд.</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Йога Зд.</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first">Йога Зд.</div>
+                        <div class="table-cell table-cell-first bare"></div>
+
+                        <div class="table-cell bare time">10:00</div>
+                        <div class="table-cell table-cell-second">Twerk</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second">Twerk</div>
+                        <div class="table-cell table-cell-second bare"></div>
+
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third">Step Plus</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">TRX</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">Step Plus</div>
+                        <div class="table-cell table-cell-third bare"></div>
+                    </div>
+                    <!--10:30-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first ">Fly Yoga</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Fly Yoga</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">10:30</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--11:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Стретчинг</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">11:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second">Zumba</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third">TRX</div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--16:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">16:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--17:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Step</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">17:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--18:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Аэробика</div>
+                        <div class="table-cell table-cell-first ">Step</div>
+                        <div class="table-cell table-cell-first">Step</div>
+                        <div class="table-cell table-cell-first ">Fly Yoga</div>
+                        <div class="table-cell table-cell-first">Аэробика</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">18:00</div>
+                        <div class="table-cell table-cell-second">KUBA Dance</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second ">Pilates</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second">Pilates</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third">TRX</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--19:10-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Fly Yoga</div>
+                        <div class="table-cell table-cell-first ">Аэробика</div>
+                        <div class="table-cell table-cell-first">Zumba</div>
+                        <div class="table-cell table-cell-first ">Step</div>
+                        <div class="table-cell table-cell-first">Zumba</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">19:10</div>
+                        <div class="table-cell table-cell-second">Pilates</div>
+                        <div class="table-cell table-cell-second ">Yoga</div>
+                        <div class="table-cell table-cell-second ">Стретчинг</div>
+                        <div class="table-cell table-cell-second ">Yoga</div>
+                        <div class="table-cell table-cell-second">Стретчинг</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third">Я–ХУДЕЮ</div>
+                        <div class="table-cell table-cell-third">Step Plus</div>
+                        <div class="table-cell table-cell-third">Я–ХУДЕЮ</div>
+                        <div class="table-cell table-cell-third">PowerFit</div>
+                        <div class="table-cell table-cell-third">Я–ХУДЕЮ</div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                </div>
             </div>
-            <input class="form-submitBtn" type="submit"><a class="form-confidentiality" href="#">Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных</a>
-          </form>
+            <div class="table-container children table-hidden">
+                <div class="table">
+                    <!--Шапка-->
+                    <div class="table-row days">
+                        <div class="table-cell bare"></div>
+                        <div class="table-cell bare">ПН.</div>
+                        <div class="table-cell bare">ВТ.</div>
+                        <div class="table-cell bare">СР.</div>
+                        <div class="table-cell bare">ЧТ.</div>
+                        <div class="table-cell bare">ПТ.</div>
+                        <div class="table-cell bare">СБ.</div>
+                    </div>
+                    <!--10:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">10:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third ">ОФП. Гимн.</div>
+                    </div>
+                    <!--10:30-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first ">Дэнс Дети</div>
+
+                        <div class="table-cell bare time">12:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--15:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Спорт.Группа</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Спорт.Группа</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Спорт.Группа</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">15:00</div>
+                        <div class="table-cell table-cell-second">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--16:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first">Дэнс Дети</div>
+                        <div class="table-cell table-cell-first ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-first">Дэнс Дети</div>
+                        <div class="table-cell table-cell-first ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-first">Дэнс Дети</div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">16:00</div>
+                        <div class="table-cell table-cell-second">Спорт.Группа</div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second ">Спорт.Группа</div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second">Спорт.Группа</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                    <!--17:00-->
+                    <div class="table-row">
+                        <div class="table-cell table-cell-first  bare"></div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first ">Дэнс Дети</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first ">Дэнс Дети</div>
+                        <div class="table-cell table-cell-first bare"></div>
+                        <div class="table-cell table-cell-first  bare"></div>
+
+                        <div class="table-cell bare time">17:00</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second  bare"></div>
+                        <div class="table-cell table-cell-second ">ОФП. Гимн.</div>
+                        <div class="table-cell table-cell-second bare"></div>
+                        <div class="table-cell table-cell-second  bare"></div>
+
+                        <div class="table-cell table-cell-third  bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third bare"></div>
+                        <div class="table-cell table-cell-third  bare"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hint">
+                <div class="slider">
+                    <img src="img/goals-slides/a/slide1.jpg" alt="">
+                    <img src="img/goals-slides/a/slide1.jpg" alt="">
+                    <img src="img/goals-slides/a/slide1.jpg" alt="">
+                </div>
+                <div class="hint-text">
+                    <h2 class="hint-text-h">Пилатес</h2>
+                    <p>Серия упражнений для увеличения прочности тела, развития мышц, улучшения осанки, баланса и
+                        координации. Каждое упражнение выполняется с особым вниманием к правильной технике дыхания и
+                        контролю брюшных мышц. Это помогает выполнять движения с максимальной мощностью и
+                        эффективностью. Занятия удлиняет и укрепляет мышцы, улучшает мышечную эластичность и подвижность
+                        суставов.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="show-on-success">
-        <div class="show-on-success__body"><span class="show-on-success__title">Спасибо за заявку</span></div>
-      </div>
-    </div>
-    <script src="static/js/jquery-3.3.1.min.js"></script>
-    <script src="static/js/libs.min.js"></script>
-    <script src="static/js/main.js"></script>
-  </body>
+    </section>
+    <section id="tickets">
+        <h2 class="">Абонементы</h2>
+        <div class="gallery-buttons">
+            <button type="button" id="all" class="active">все</button>
+            <button type="button" id="ad">взрослые</button>
+            <button type="button" id="chl">детские</button>
+            <button type="button" id="tm">совместные</button>
+            <button type="button" id="ev">вечерние</button>
+            <button type="button" id="mr">утренние</button>
+        </div>
+        <div class="content">
+            <div class="gallery">
+                <div class="gallery-item ad mr">
+                    <img src="img/1.png" alt="Абонемент" class="ad mr">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad mr">
+                    <img src="img/3.png" alt="Абонемент" class="ad mr">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad mr">
+                    <img src="img/6.png" alt="Абонемент" class="ad mr">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad ev">
+                    <img src="img/2.png" alt="Абонемент" class="ad ev">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad ev">
+                    <img src="img/4.png" alt="Абонемент" class="ad ev">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad ev">
+                    <img src="img/5.png" alt="Абонемент" class="ad ev">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item ad tm">
+                    <img src="img/15.png" alt="Абонемент" class="ad tm">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item chl">
+                    <img src="img/15.png" alt="Абонемент" class="chl">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+                <div class="gallery-item chl">
+                    <img src="img/15.png" alt="Абонемент" class="chl">
+                    <div class="mobile-hint">
+                        <img src="img/close.svg" alt="Close" class="close">
+                        <h2>Свободный, до 17:00</h2>
+                        <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                            17:00.<br/><br/>
+                            Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                            пятницу, в
+                            среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                            Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                            на <a
+                                    href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                            Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                            вечерние тренировки.</p>
+                        <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                        <a href="tel:+37368444804">0 68 444 804</a>
+                        <span>Она на связи с 9:00 по 19:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h2>Свободный, до 17:00</h2>
+                <p>Абонемент позволяет безлимитно <span>(и с меньшим колличеством людей)</span> заниматься с 9:00 до
+                    17:00.<br/><br/>
+                    Сбросить лишние кг. вы сможете на <a href="#call-link">PowerFit</a> в 9:00 в понедельник, среду и
+                    пятницу, в
+                    среду, в 10:00 на <a href="#call-link">TRX</a> и, ежедневно, в 16:00 на <a href="#call-link">PowerFit</a>.<br/><br/>
+                    Чтоб сделать растяжку, приходите на <a href="#call-link">Pilates</a> в 9:00 в понедельник и среду, и
+                    на <a
+                            href="#call-link">Fly Yoga</a> в 10:30, во вторник и четверг.<br/><br/>
+                    Рекомендуем абонемент тем, кто работает во вторую смену или не имеет возможности приходить на
+                    вечерние тренировки.</p>
+                <h2>На вопросы по абонементам ответить наш админ ;-)</h2>
+                <a href="tel:+37368444804">0 68 444 804</a>
+                <span>Она на связи с 9:00 по 19:00</span>
+            </div>
+        </div>
+    </section>
+    <section id="feed-back">
+        <h2>Запись на экскурсиию в клуб</h2>
+        <p id="feed-back-form">Покажем наши залы и тренажеры.<br/>Расскажете о себе, своих возможностях и пожеланиях. А
+            тренер, выслушав
+            вас, поможет выбрать программу тренировок, расскажет о правильном питании и проследит за тем, чтобы ваши
+            тренировки приносили результат.</p>
+        <form action="mail.php" method="post">
+            <div class="first-line">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="phone" placeholder="Телефон">
+            </div>
+            <textarea name="message" id="mes" cols="30" rows="10"
+                      placeholder="Мы готовы устроить экскурсию в будни, с 9:00 до 20:00, по субботам с 9:00 до 12:00. Напишите дату и время, когда вам будет удобно зайти к нам."></textarea>
+            <input type="submit" value="ЗАПИСАТЬСЯ">
+        </form>
+    </section>
+    <section id="contacts">
+        <h2>Адрес и контакты</h2>
+        <div class="links">
+            <div class="phone">
+                <a href="tel:+37368444804">0 68 444 804</a>
+                <span>Администратор на связи с 9:00 по 19:00</span>
+            </div>
+            <div class="address">
+                <img src="img/point.svg" alt="Map label">
+                <p>Г. Бельцы, ул. Хотинская 17, ТЦ "Элит 2", третий этаж</p>
+            </div>
+        </div>
+        <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10728.760058230748!2d27.9223874!3d47.7583686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf893616517d4a45!2sShantel+%E2%80%93+women+fitness+club!5e0!3m2!1sru!2s!4v1548516834770"
+                width="100%" height="510px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+</main>
+<footer id="footer">
+    <a href="https://www.facebook.com/shantel.club.page" class="fb">
+        <img src="img/fb.svg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/shantel.fitness/" class="inst">
+        <img src="img/inst.svg" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com/" class="yt">
+        <img src="img/yt.svg" alt="YouTube">
+    </a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script>
+    $('.slider').slick();
+</script>
+</body>
 </html>
