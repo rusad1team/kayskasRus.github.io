@@ -1255,4 +1255,10 @@ nav.mobile {
         flex-wrap: nowrap;
         overflow-y: scroll;
     }
+    .words {
+        overflow-y: scroll;
+        height: 70px;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
 }
