@@ -843,7 +843,7 @@ nav.mobile {
         display: none;
     }
     nav.mobile{
-        position: fixed;
+        position: absolute;
         z-index: 99;
         height: 50px;
         width: 100%;
@@ -887,7 +887,7 @@ nav.mobile {
         background: linear-gradient(to right, #bdccd4, #3fa9f5);
         width: 100%;
         z-index: 99;
-        position: fixed;
+        position: absolute;
         top: 50px;
         left: 0;
         height: calc(100vh - 50px);
@@ -1232,9 +1232,41 @@ nav.mobile {
         font-size: 1rem;
     }
 }
+@media (max-width: 800px) {
+    .gallery {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #tickets .gallery > .gallery-item {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    #tickets .gallery > .gallery-item > .mobile-hint  {
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    #pre-word .words {
+        overflow-y: scroll;
+        height: 70px;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    #tickets > .gallery-buttons {
+        padding: 10px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+}
 @media (max-width: 450px) {
     .mobile-hint {
         width: 100%!important;
+    }
+    #tickets .gallery {
+        display: grid!important;
+    }
+    #tickets .gallery > .gallery-item {
+        width: 80%!important;
     }
     .mobile {
         position: absolute!important;
@@ -1249,16 +1281,5 @@ nav.mobile {
         width: 90%;
         overflow-y: scroll;
         margin: 0 auto;
-    }
-    #tickets > .gallery-buttons {
-        padding: 10px;
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .words {
-        overflow-y: scroll;
-        height: 70px;
-        margin-top: 20px;
-        flex-wrap: nowrap;
     }
 }
