@@ -810,18 +810,64 @@ nav.mobile {
         font-size: 1.2rem;
     }
 
-    #tickets > .content{
-        flex-direction: column;
-        align-items: center;
-    }
-
     #tickets .gallery{
         margin-right: 0;
         margin-bottom: 20px;
+        width: 100%;
+    }
+    #tickets > .content {
+        padding: 0 15px;
+    }
+    #tickets .description{
+        width: 100%;
+        display: none;
+    }
+     #tickets .active > img{
+        opacity: 0!important;
+    }
+
+    #tickets .active > .mobile-hint{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-item {
+        position: relative;
+    }
+    #tickets .gallery > .gallery-item > .mobile-hint{
+        width: 100%;
+        font-family: Centar, Roboto, sans-serif;
+        position: absolute;
+        color: #ffffff!important;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #666666;
+        border-radius: 12px;
+        padding: 30px 20px;
+        z-index: 9;
+    }
+
+    #tickets .mobile-hint > h2{
+        color: #ffffff;
+    }
+
+    #tickets .gallery .mobile-hint > .close{
+        position: absolute;
+        width: 35px;
+        height: auto;
+        top: 15px;
+        right: 15px;
+    }
+
+    #tickets .gallery img{
+        width: 100%;
+        height: auto;
+        margin: -10px;
     }
 
     #tickets .description{
         width: 100%;
+        display: none;
     }
 
 }
@@ -1245,6 +1291,9 @@ nav.mobile {
     #tickets .gallery > .gallery-item > .mobile-hint  {
         transform: translateX(-50%);
         width: 100%;
+    }
+    #tickets > .content {
+        padding: 0;
     }
     #pre-word .words {
         overflow-y: scroll;
