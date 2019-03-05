@@ -1250,4 +1250,9 @@ nav.mobile {
         overflow-y: scroll;
         margin: 0 auto;
     }
+    #tickets > .gallery-buttons {
+        padding: 10px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
 }
