@@ -1098,7 +1098,6 @@ nav.mobile {
     }
 
     #tickets .gallery > .gallery-item{
-        width: 80%;
         position: relative;
         opacity: 1;
     }
@@ -1252,6 +1251,33 @@ nav.mobile {
     
     .address img, .address p{
         display: inline-block;
+    }
+    .gallery {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #tickets .gallery > .gallery-item {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    #tickets .gallery > .gallery-item > .mobile-hint  {
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    #tickets > .content {
+        padding: 0;
+    }
+    #pre-word .words {
+        overflow-y: scroll;
+        height: 70px;
+        margin-top: 20px;
+        flex-wrap: nowrap;
+    }
+    #tickets > .gallery-buttons {
+        padding: 10px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
     }
 }
 @media (max-width: 665px) {
