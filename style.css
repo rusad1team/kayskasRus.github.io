@@ -67,7 +67,12 @@ nav.mobile {
     grid-template-columns: 2fr 1fr 2fr;
     font-family: Centar, Roboto, sans-serif;
 }
-
+.header-container {
+    position: fixed;
+    z-index: 99;
+    height: 50px;
+    width: 100%;
+}
 .header-container .navbar ul {
     display: flex;
     justify-content: space-between;
@@ -97,8 +102,11 @@ nav.mobile {
     justify-content: center;
     height: 40px;
     padding: 5px 10px;
+    background: white;
 }
-
+#pre-word {
+    padding-top: 60px;
+}
 .navbar > .logo > img {
     max-height: 100%;
 }
@@ -889,7 +897,7 @@ nav.mobile {
         display: none;
     }
     nav.mobile{
-        position: absolute;
+        position: fixed;
         z-index: 99;
         height: 50px;
         width: 100%;
@@ -1305,6 +1313,9 @@ nav.mobile {
     }
 }
 @media (max-width: 800px) {
+    #pre-word {
+        padding-top: 0;
+    }
     .gallery {
         display: flex!important;
         flex-wrap: wrap;
@@ -1342,9 +1353,6 @@ nav.mobile {
     }
     #tickets .gallery > .gallery-item {
         width: 80%!important;
-    }
-    .mobile {
-        position: absolute!important;
     }
     .menu-active {
         position: absolute!important;
