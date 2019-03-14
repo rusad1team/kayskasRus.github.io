@@ -36,7 +36,7 @@
                   </svg></a><a href="#">
                   <svg class="svg-sprite-icon icon-classMates header-top__icon">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#classMates"></use>
-                  </svg></a></div><a class="btn" href="#">Онлайн Запись</a>
+                  </svg></a></div><a class="btn js-popup-link" href="#">Онлайн Запись</a>
             </div>
             <div class="header-top__info">
               <div class="header-top__infoWrapper"><span class="header-top__addres">СПб, Коломяжский пр., 15</span>
@@ -73,7 +73,7 @@
               <div class="banner-wrapper">
                 <h1 class="banner-title">Аппаратная косметология <strong>Beauty Technology</strong></h1>
                 <p class="banner-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                <div class="banner-btnWrapper"><a class="btn btn-large" href="#">Онлайн запись</a><a class="btn btn-large btn-pink" href="#">Получить консультацию специалиста</a></div>
+                <div class="banner-btnWrapper"><a class="btn btn-large" href="#">Онлайн запись</a><a class="btn btn-large btn-pink js-popup-link" href="#popup-onlineReserve">Получить консультацию специалиста</a></div>
               </div>
             </div>
           </div>
@@ -97,6 +97,7 @@
             <div class="reviews">
               <h2 class="reviews-title">Впечатления <strong>наших клиентов</strong></h2>
               <div class="reviews-sliderWrapper">
+                <div class="reviews-dots"></div>
                 <div class="js-reviews-slider">
                   <div class="reviews-itemWrapper">
                     <div class="reviews-item">
@@ -116,7 +117,7 @@
                         <div class="reviews-quote">
                           <svg class="svg-sprite-icon icon-quote reviews-quote__icon">
                             <use xlink:href="static/images/svg/symbol/sprite.svg#quote"></use>
-                          </svg><a class="reviews-quote__link" href="#">Любые отзыв по работе нашего салона красоты, менеджеров,стилистов Вы можете отправить на арес электронной почты <strong>naturel-studio@mail.ru</strong>. Все отзыв мы будем публиковать на нашем сайте в этом разделе. Спасибо!</a>
+                          </svg><a class="reviews-quote__link" href="mailto:naturel-studio@mail.ru">Любые отзыв по работе нашего салона красоты, менеджеров,стилистов Вы можете отправить на арес электронной почты <strong>naturel-studio@mail.ru</strong>. Все отзыв мы будем публиковать на нашем сайте в этом разделе. Спасибо!</a>
                         </div>
                       </div>
                     </div>
@@ -168,22 +169,36 @@
               <div class="tabs">
                 <div class="tabs-listWrappers">
                   <div class="tabs-list">
-                    <select>
-                      <option show-tab="place1">Парикмахер</option>
-                      <option show-tab="place2">Cтилист</option>
-                      <option show-tab="place3">Шугаринг</option>
+                    <select id="selectFirst">
+                      <option value="one" selected="selected">Парикмахер</option>
+                      <option value="two">Cтилист</option>
+                      <option value="three">Шугаринг</option>
                     </select>
                   </div>
-                  <div class="tabs-list">
+                  <div class="tabs-list hide one">
+                    <select id="selectStreetFirst">
+                      <option value="street1" selected="selected">ул. Композиторов, д 10</option>
+                      <option value="street2">ул. Композиторов, д 11</option>
+                      <option value="street3">ул. Композиторов, д 12</option>
+                    </select>
+                  </div>
+                  <div class="tabs-list hide two" id="street_2">
                     <select>
-                      <option class="place1">ул. Композиторов, д 10</option>
-                      <option class="place2">ул. Композиторов, д 11</option>
-                      <option class="place3">ул. Композиторов, д 12</option>
+                      <option>ул. Композиторов, д 4</option>
+                      <option>ул. Композиторов, д 3</option>
+                      <option>ул. Композиторов, д 5</option>
+                    </select>
+                  </div>
+                  <div class="tabs-list hide three" id="street_3">
+                    <select>
+                      <option>ул. Композиторов, д 21</option>
+                      <option>ул. efafa</option>
+                      <option>ул. Композиторов, д 22131</option>
                     </select>
                   </div>
                 </div>
                 <div class="tabs-body slider-tabs">
-                  <div class="tab tab--active">
+                  <div class="tab street-hide street1">
                     <div class="ourMasters-sliderWrapper">
                       <div class="ourMasters-sliderFirstWrapper">
                         <div class="js-ourMasters-first">
@@ -261,6 +276,12 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="tab street-hide street2">
+                    <p>123</p>
+                  </div>
+                  <div class="tab street-hide street3">
+                    <p>2356</p>
                   </div>
                 </div>
                 <div class="tabs-body mobile-tabs">
@@ -405,8 +426,40 @@
           </div>
           <div class="map" id="map"></div>
         </div>
-        <div class="footer-bottom"><a class="btn btn-large" href="#">Свяжитесь с нами сейчас</a><span class="footer-bottom__copy">Copyright 2018. Все права защищены. При копировании материалов ссылка обязательна</span><small>Rus Kayskas</small></div>
+        <div class="footer-bottom"><a class="btn btn-large js-popup-link" href="#popup-onlineReserve">Свяжитесь с нами сейчас</a><span class="footer-bottom__copy">Copyright 2018. Все права защищены. При копировании материалов ссылка обязательна</span><small>Rus Kayskas</small></div>
       </footer>
+    </div>
+    <div class="popup mfp-hide" id="popup-onlineReserve">
+      <div class="hide-on-success">
+        <div class="popup-header"><span class="popup-title">Получить Консультацию</span>
+          <div class="popup-close">
+            <svg class="svg-sprite-icon icon-close popup-close__icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="popup-body">
+          <form class="popupform">
+            <div class="popupform-group popupform-group--required">
+              <label class="popupform-group__label">Контактный телефон<strong>*</strong></label>
+              <input class="input-field" placeholder="+7(912)123-34-45" type="phone">
+            </div>
+            <div class="popupform-group">
+              <label class="popupform-group__label">Ваше имя</label>
+              <input class="input-field" placeholder="Ваше Имя" type="name">
+            </div>
+            <div class="popupform-group">
+              <label class="popupform-group__label">Сообщение</label>
+              <textarea class="textarea-field" placeholder="Сообщение" type="msq"></textarea>
+            </div>
+            <div class="popupform-footer">
+              <input class="btn" type="submit" value="Записаться">
+              <p class="popupform-info">Нажимая кнопку "Записаться", вы соглашаетесь с <a href="#" class="form-info__link">политикой конфиденциальности</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="show-on-success"></div>
+      </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
