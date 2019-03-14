@@ -73,7 +73,16 @@ function CityChange()
           vertical: true,
           arrows: false,
           centerMode: true,
-          focusOnSelect: true
+          focusOnSelect: true,
+          responsive: [
+            {
+              breakpoint: 450,
+              settings: "unslick"
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+            ]
         });
     };
     let sliderToggleBlock = function() {
