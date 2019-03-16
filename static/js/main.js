@@ -51,7 +51,7 @@ $(document).ready(function () {
     let sandwich = () => {
       $('.sandwich').on('click', function(){
         $(this).toggleClass('sandwich--active');
-        $('.nav').slideToggle();  
+        $('.nav').toggleClass('nav--active');
       });
     };
 function CityChange()
