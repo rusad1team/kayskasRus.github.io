@@ -24,7 +24,9 @@ $(document).ready(function () {
         $('.sandwich').removeClass('sandwich--active'); 
       });
       $('.dropBx').on('click', function(){
-        $('.dropDownMenu').slideToggle();
+         if ($(window).width() <= '768') {
+            $('.dropDownMenu').slideToggle();
+         }
       });
     };
 
