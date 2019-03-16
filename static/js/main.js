@@ -1,39 +1,5 @@
-/*const dict = [
-  {
-    masters: [1,2,3],
-    servises: [1,2],
-  },
-  {
-    masters: [4,5,6],
-    servises: [1],
-  }
-]*/
-window.addEventListener('DOMContentLoaded', function() {
-  var select = document.querySelector('#selectFirst'),
-  hide = document.querySelectorAll('.hide');
-  function change()
-  {
-    [].forEach.call(hide, function(el) {
-           var add = el.classList.contains(select.value) ? "add" : "remove"
-           el.classList[add]('show');
-    });
-  }
-  select.addEventListener('change', change);
-  change()
- });
-window.addEventListener('DOMContentLoaded', function() {
-  var selecttwo = document.querySelector('#selectStreetFirst'),
-  hide = document.querySelectorAll('.street-hide');
-  function change()
-  {
-    [].forEach.call(hide, function(el) {
-           var add = el.classList.contains(selecttwo.value) ? "add" : "remove"
-           el.classList[add]('street-show');
-    });
-  }
-  selecttwo.addEventListener('change', change);
-  change()
- });
+
+
 $(document).ready(function () {
     svg4everybody({});
 
@@ -53,7 +19,7 @@ $(document).ready(function () {
         $(this).toggleClass('sandwich--active');
         $('.mobile-nav').toggleClass('mobile-nav--active');
       });
-      $('.mobile-nav ul li a').click(function(){
+      $('.nav-link').click(function(){
         $('.mobile-nav').removeClass('mobile-nav--active');
         $('.sandwich').removeClass('sandwich--active'); 
       });
@@ -61,10 +27,7 @@ $(document).ready(function () {
         $('.dropDownMenu').slideToggle();
       });
     };
-function CityChange()
-      {
-    $("#streets").html($("#street_"+$("#street").options[this.selectedIndex].value).html())
-      }
+
     let sliderTabs =  () => {
        $('.js-ourMasters-second').slick({
           slidesToShow: 1,
@@ -102,7 +65,7 @@ function CityChange()
             $(this).toggleClass('question-link--active');
         });
     }
-    $("nav").on("click","a", function (event) {
+    $("nav").on("click",".nav-link", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
@@ -160,3 +123,30 @@ if($('div').is('.map')) {
         myMap.controls.remove('trafficControl').remove('searchControl').remove('typeSelector').remove('fullscreenControl');
     }); 
 };
+
+window.addEventListener('DOMContentLoaded', function() {
+  var select = document.querySelector('#selectFirst'),
+  hide = document.querySelectorAll('.hide');
+  function change()
+  {
+    [].forEach.call(hide, function(el) {
+           var add = el.classList.contains(select.value) ? "add" : "remove"
+           el.classList[add]('show');
+    });
+  }
+  select.addEventListener('change', change);
+  change()
+ });
+window.addEventListener('DOMContentLoaded', function() {
+  var selecttwo = document.querySelector('#selectStreetFirst'),
+  hide = document.querySelectorAll('.street-hide');
+  function change()
+  {
+    [].forEach.call(hide, function(el) {
+           var add = el.classList.contains(selecttwo.value) ? "add" : "remove"
+           el.classList[add]('street-show');
+    });
+  }
+  selecttwo.addEventListener('change', change);
+  change()
+ });
