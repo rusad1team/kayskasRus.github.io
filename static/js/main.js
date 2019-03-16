@@ -51,7 +51,14 @@ $(document).ready(function () {
     let sandwich = () => {
       $('.sandwich').on('click', function(){
         $(this).toggleClass('sandwich--active');
-        $('.nav').toggleClass('nav--active');
+        $('.mobile-nav').toggleClass('mobile-nav--active');
+      });
+      $('.mobile-nav ul li a').click(function(){
+        $('.mobile-nav').removeClass('mobile-nav--active');
+        $('.sandwich').removeClass('sandwich--active'); 
+      });
+      $('.dropBx').on('click', function(){
+        $('.dropDownMenu').slideToggle();
       });
     };
 function CityChange()
