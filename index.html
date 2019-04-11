@@ -1,88 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>YouTube intensive</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>                 
-        <header>
-            <div class="container">
-                <div class="row align-items-center">
-                    <svg class="hamburger" width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="1" x2="25" y2="1" stroke="black" stroke-width="2"/>
-                        <line y1="11" x2="25" y2="11" stroke="black" stroke-width="2"/>
-                        <line y1="6" x2="25" y2="6" stroke="black" stroke-width="2"/>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__left"><a href="#">Адреса магазинов</a></div>
+            <div class="header-top__right"><a class="header-top__phone" href="tel:81231231212">
+                <svg class="svg-sprite-icon icon-phone header-top__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                </svg><span>8 123 123 12 12</span></a><a class="callback header-top__callBack" href="#">Заказать звонок</a></div>
+          </div>
+        </div>
+        <div class="header-middle">
+          <div class="container">
+            <div class="logo"><img src="static/images/general/logo.png" alt="Логотип"></div>
+            <div class="location">
+              <div class="location-header">
+                <svg class="svg-sprite-icon icon-loc location-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#loc"></use>
+                </svg>
+              </div>
+              <div class="location-body"><span>Ваш Город</span><a class="location-modal" href="#">Россия</a></div>
+            </div>
+            <div class="header__item">
+              <form class="search" action="#">
+                <input class="search__input" required minlength="2" size="20" maxlength="50" autocomplete="off" type="text" placeholder="Я ищу...">
+                <button>
+                  <svg class="svg-sprite-icon icon-search search-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="header-middle__wrapperLikeAndCart">
+              <div class="like">
+                <svg class="svg-sprite-icon icon-like like-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#like"></use>
+                </svg>
+                <div class="like-badge badge">0</div>
+              </div>
+              <div class="cart" id="cart">
+                <div class="cart-body">
+                  <svg class="svg-sprite-icon icon-cart cart-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                  </svg>
+                  <div class="cart-badge badge">0</div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-title">Корзина</div><span>пуста</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <nav class="nav">
+              <ul>
+                <li><a href="#">смартфоны</a></li>
+                <li><a href="#">планшеты и ноутбуки</a></li>
+                <li><a href="#">гаджеты и устройства</a></li>
+                <li><a href="#">музыка</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li><a href="#">аксессуары</a></li>
+                <li><a href="#">одежда и символика</a></li>
+                <li><a href="#">транспорт</a></li>
+                <li><a href="#">TV и приставки</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="s-banner">
+          <div class="container">
+            <div class="banner">
+              <div class="slider-nav__wrapper">
+                <div class="slider-nav slider-nav--prev">
+                  <svg class="svg-sprite-icon icon-chevron-left slider-nav__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#chevron-left"></use>
+                  </svg>
+                </div>
+                <div class="slider-nav slider-nav--next">
+                  <svg class="svg-sprite-icon icon-chevron-right slider-nav__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#chevron-right"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="js-banner-slider">
+                <div class="banner-item"><img src="static/images/content/banner/img1.jpg" alt="Изображение для слайдера"></div>
+                <div class="banner-item"><img src="static/images/content/banner/img1.jpeg" alt="Изображение для слайдера"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-grid">
+          <div class="container">
+            <div class="grid">
+              <div class="grid-wrapper">
+                <div class="grid-item grid-item--half"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+                <div class="grid-item grid-item--halfTwoItems">
+                  <div class="grid-item__first"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                    <div class="grid-item--descr"><span>Смартфоны</span></div>
+                  </div>
+                  <div class="grid-item__second"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a></div>
+                </div>
+              </div>
+              <div class="grid-wrapper">
+                <div class="grid-item grid-item--half"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+                <div class="grid-item grid-item--half"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+              </div>
+              <div class="grid-wrapper">
+                <div class="grid-item grid-item--three"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+                <div class="grid-item grid-item--three"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+                <div class="grid-item grid-item--three"><a href="#"><img src="static/images/content/grid/img1.jpg" alt="Смартфоны"></a>
+                  <div class="grid-item--descr"><span>Смартфоны</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper"><a class="btn" href="#">Смотреть Весь Каталог</a></div>
+          </div>
+        </section>
+        <section class="s-hits">
+          <div class="container">
+            <div class="hits">
+              <div class="hits-titleWrapper">
+                <h2 class="hits-title"><strong>ХИТЫ</strong> ПРОДАЖ</h2>
+                <div class="slider-nav__wrapper slider-nav__wrapper--hits">
+                  <div class="slider-nav slider-nav--hits slider-nav--hitsPrev">
+                    <svg class="svg-sprite-icon icon-chevron-left slider-nav__iconHits">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#chevron-left"></use>
                     </svg>
-                    <a href="#" class="logo">
-                        <img src="logo/youtube.svg" alt="logo">
-                    </a>
+                  </div>
+                  <div class="slider-nav slider-nav--hits slider-nav--hitsNext">
+                    <svg class="svg-sprite-icon icon-chevron-right slider-nav__iconHits">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#chevron-right"></use>
+                    </svg>
+                  </div>
                 </div>
-                <div data-slide="nav" class="row">
-                    <div class="header__menu">
-                        <div class="header__item">
-                            <form class="search" action="#">
-                                <input required minlength="2" type="text" placeholder="Я ищу..." class="search__input">
-                                <button>
-                                    <img src="icons/glass.svg" alt="search">
-                                </button>
-                            </form>
-                        </div>
-                        <div class="header__item">
-                            <div class="header__item-descr">
-                                Night mode
-                            </div>
-                            <div class="header__item-switch">
-                                <input type="checkbox" id="cbx" style="display:none"/>
-                                <label for="cbx" class="toggle"><span></span></label>   
-                            </div>
-                        </div>
+              </div>
+              <div class="js-hits-slider">
+                <div class="hits-item__wrapper">
+                  <div class="hits-item"><a class="hits-item__imgWrapper" href="#"><img src="static/images/content/hits/img1.jpg" alt="Хиты продаж"></a><a class="hits-item__link" href="#">Смартфон</a>
+                    <div class="hits-item__wrapperPriceAndAddBtn">
+                      <div class="hits-item__priceWrapper"><span> 33333 </span> руб.</div><a class="btn-add" href="#">
+                        <svg class="svg-sprite-icon icon-cart btn-add__icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                        </svg></a>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <hr>
-        </header>
-        <div class="videos">
-            <div class="container">
-                <div class="videos__wrapper">
-                   <a data-url="AiiSFdsuEjo" href="#" class="videos__item">
-                        <img src="img/thumb.webp" alt="thumb">
-                        <div class="videos__item-descr">
-                            #6 Оптимизация Page Speed Insight Google | Публикация на Хостинг | HandyHost | Марафон вёрстки
-                        </div>
-                        <div class="videos__item-views">
-                            2,6 тыс. просмотров
-                        </div>
-                    </a>
-                    <a data-url="Vb3r7XVTPOc" href="#" class="videos__item">
-                        <img src="img/thumb_1.webp" alt="thumb">
-                        <div class="videos__item-descr">
-                            #5 Пишем jQuery скрипты на landing page | Реальный заказ | Марафон вёрстки | Артем Исламов                        </div>
-                        <div class="videos__item-views">
-                            3,7 тыс. просмотров
-                        </div>
-                    </a>
-                    <a data-url="YH2XYrbz-S0" href="#" class="videos__item">
-                        <img src="img/thumb_2.webp" alt="thumb">
-                        <div class="videos__item-descr">
-                            #4 вёрстка реального landing page | Марафон верстки | Артем Исламов                        </div>
-                        <div class="videos__item-views">
-                            3,2 тыс. просмотров
-                        </div>
-                    </a>
-
-                    <button class="more">Загрузить еще</button>
+                <div class="hits-item__wrapper">
+                  <div class="hits-item"><a class="hits-item__imgWrapper" href="#"><img src="static/images/content/hits/img1.jpg" alt="Хиты продаж"></a><a class="hits-item__link" href="#">Смартфон</a>
+                    <div class="hits-item__wrapperPriceAndAddBtn">
+                      <div class="hits-item__priceWrapper"><span> 33333 </span> руб.</div><a class="btn-add" href="#">
+                        <svg class="svg-sprite-icon icon-cart btn-add__icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                        </svg></a>
+                    </div>
+                  </div>
                 </div>
+                <div class="hits-item__wrapper">
+                  <div class="hits-item"><a class="hits-item__imgWrapper" href="#"><img src="static/images/content/hits/img1.jpg" alt="Хиты продаж"></a><a class="hits-item__link" href="#">Смартфон</a>
+                    <div class="hits-item__wrapperPriceAndAddBtn">
+                      <div class="hits-item__priceWrapper"><span> 33333 </span> руб.</div><a class="btn-add" href="#">
+                        <svg class="svg-sprite-icon icon-cart btn-add__icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hits-item__wrapper">
+                  <div class="hits-item"><a class="hits-item__imgWrapper" href="#"><img src="static/images/content/hits/img1.jpg" alt="Хиты продаж"></a><a class="hits-item__link" href="#">Смартфон</a>
+                    <div class="hits-item__wrapperPriceAndAddBtn">
+                      <div class="hits-item__priceWrapper"><span> 33333 </span> руб.</div><a class="btn-add" href="#">
+                        <svg class="svg-sprite-icon icon-cart btn-add__icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrapper"><a class="btn" href="#">Смотреть Весь Каталог</a></div>
             </div>
+          </div>
+        </section>
+        <section class="s-about">
+          <div class="container">
+            <div class="about">
+              <div class="about-descr">
+                <h1 class="hits-title"><strong>Итернет Магазин</strong> Xiaomi</h1>
+                <p class="about-descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim voluptates asperiores nobis voluptatum, ipsam repellat excepturi sit accusamus nesciunt consequuntur, unde consectetur! Necessitatibus in totam beatae velit tenetur deleniti, consequatur ab, veritatis est sequi eum, inventore eligendi accusamus eaque odit obcaecati suscipit. Quisquam accusamus enim impedit et, ullam est accusantium alias, similique ipsa voluptate minus ratione minima fugiat at voluptas corrupti inventore. Quis officia vitae eligendi fugiat minus maiores labore suscipit eveniet cumque. Obcaecati, veritatis! Accusamus, sint expedita repellat ab facere odit nemo ipsa, aliquam facilis temporibus eaque ea nisi quae atque mollitia veniam assumenda ipsam maiores eligendi alias?</p>
+              </div>
+              <form class="form" action="#">
+                <h2 class="hits-title"><strong>ФОРМА ОБРАТНОЙ СВЯЗИ </strong></h2>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="телефон">
+                <textarea name="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input class="btn" type="submit" value="Отправить">
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-top__info">
+              <div class="logo"><img src="static/iamges/general/logo.png" alt="Логотиа"></div><a class="phone" href="#">8 800 800 80 80</a>
+              <div class="footer-top__addres"><span>г. такой то и дт </span></div><a class="email" href="#">ya@ya.com</a>
+              <div class="footer-top__social">
+                <svg class="svg-sprite-icon icon-vk social-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+                <svg class="svg-sprite-icon icon-vk social-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="footer-top__nav">
+              <nav class="nav nav-footer">Меню
+                <ul class="footer-list">
+                  <li><a href="#">смартфоны</a></li>
+                  <li><a href="#">планшеты и ноутбуки</a></li>
+                  <li><a href="#">гаджеты и устройства</a></li>
+                  <li><a href="#">музыка</a></li>
+                  <li><a href="#">фото и видео</a></li>
+                  <li><a href="#">аксессуары</a></li>
+                  <li><a href="#">одежда и символика</a></li>
+                  <li><a href="#">транспорт</a></li>
+                  <li><a href="#">TV и приставки</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-top__nav">
+              <nav class="nav nav-footer">Каталог
+                <ul class="footer-list">
+                  <li><a href="#">смартфоны</a></li>
+                  <li><a href="#">планшеты и ноутбуки</a></li>
+                  <li><a href="#">гаджеты и устройства</a></li>
+                  <li><a href="#">музыка</a></li>
+                  <li><a href="#">фото и видео</a></li>
+                  <li><a href="#">аксессуары</a></li>
+                  <li><a href="#">одежда и символика</a></li>
+                  <li><a href="#">транспорт</a></li>
+                  <li><a href="#">TV и приставки</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-top__nav">
+              <nav class="nav nav-footer">Услуги
+                <ul class="footer-list">
+                  <li><a href="#">смартфоны</a></li>
+                  <li><a href="#">планшеты и ноутбуки</a></li>
+                  <li><a href="#">гаджеты и устройства</a></li>
+                  <li><a href="#">музыка</a></li>
+                  <li><a href="#">фото и видео</a></li>
+                  <li><a href="#">аксессуары</a></li>
+                  <li><a href="#">одежда и символика</a></li>
+                  <li><a href="#">транспорт</a></li>
+                  <li><a href="#">TV и приставки</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="footer-bottom"><span>© 2019 Придумаем</span><small>Rus Kayskas</small></div>
         </div>
-
-        <div class="modal">
-            <div id='frame' class="modal__body"></div>
-        </div>
-        
-        <script src="js/script.js"></script>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>
