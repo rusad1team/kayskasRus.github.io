@@ -14,52 +14,69 @@
       <header class="header">
         <div class="header-top">
           <div class="container">
-            <div class="header-top__left"><a href="#">Адреса магазинов</a></div>
-            <div class="header-top__right"><a class="header-top__phone" href="tel:81231231212">
-                <svg class="svg-sprite-icon icon-phone header-top__icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
-                </svg><span>8 123 123 12 12</span></a><a class="callback header-top__callBack" href="#">Заказать звонок</a></div>
+            <div class="header-top__left">
+              <nav class="nav-top">
+                <ul>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">О Компании</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a class="tdLink" href="#">Ваши Вопросы</a></li>
+                  <li><a href="#">Статьи</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a class="orangeLink" href="#">Контроль Качества</a></li><a class="location" href="#">
+                    <div class="location-header">
+                      <svg class="svg-sprite-icon icon-loc location-icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#loc"></use>
+                      </svg>
+                    </div>
+                    <div class="location-body"><span>Россия</span></div></a>
+                  <div class="location-onClick"><span class="location-onClick__title">ВЫБЕРИТЕ СВОЙ ГОРОД:</span>
+                    <ul>
+                      <li><a href="#">Москва</a></li>
+                      <li><a href="#">Краснодар</a></li>
+                      <li><a href="#">Челябинск</a></li>
+                      <li><a href="#">Санкт-Петербург</a></li>
+                      <li><a href="#">Москва</a></li>
+                      <li><a href="#">Москва</a></li>
+                      <li><a href="#">Москва</a></li>
+                      <li><a href="#">Москва</a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-top">
+              <div class="cart" id="cart">
+                <div class="cart-body">
+                  <div class="cart-title">Корзина</div>
+                  <svg class="svg-sprite-icon icon-cart cart-icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
+                  </svg>
+                  <div class="cart-badge badge"><span>0</span></div><span>товаров</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="header-middle">
           <div class="container">
-            <div class="logo"><img src="static/images/general/logo.png" alt="Логотип"></div>
-            <div class="location">
-              <div class="location-header">
-                <svg class="svg-sprite-icon icon-loc location-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#loc"></use>
-                </svg>
+            <div class="header-middle__left">
+              <div class="logo"><img src="static/images/general/logo.png" alt="Логотип"></div>
+              <div class="header__item">
+                <form class="search" action="#">
+                  <input class="search__input" required minlength="2" size="20" maxlength="50" autocomplete="off" type="text" placeholder="Я ищу...">
+                  <button class="search-button">
+                    <svg class="svg-sprite-icon icon-search search-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
               </div>
-              <div class="location-body"><span>Ваш Город</span><a class="location-modal" href="#">Россия</a></div>
+              <div class="job-time"><span>пн-пт - с 9:00 до 17:00</span><span>сб, вс - выходной</span></div>
             </div>
-            <div class="header__item">
-              <form class="search" action="#">
-                <input class="search__input" required minlength="2" size="20" maxlength="50" autocomplete="off" type="text" placeholder="Я ищу...">
-                <button>
-                  <svg class="svg-sprite-icon icon-search search-icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-            <div class="header-middle__wrapperLikeAndCart">
-              <div class="like">
-                <svg class="svg-sprite-icon icon-like like-icon">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#like"></use>
-                </svg>
-                <div class="like-badge badge">0</div>
-              </div>
-              <div class="cart" id="cart">
-                <div class="cart-body">
-                  <svg class="svg-sprite-icon icon-cart cart-icon">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
-                  </svg>
-                  <div class="cart-badge badge">0</div>
-                </div>
-                <div class="cart-item">
-                  <div class="cart-title">Корзина</div><span>пуста</span>
-                </div>
-              </div>
+            <div class="header-top__right">
+              <div class="phone-wrapper"><span class="phone-title">Viber, WhatsApp</span><a class="header-top__phone" href="tel:81231231212"><span>8 123 123 12 12</span></a><a class="header-top__phone" href="tel:81231231212"><span>8 123 123 12 12</span></a></div><a class="callback header-top__callBack btn" href="#">Заказать звонок</a>
             </div>
           </div>
         </div>
@@ -212,10 +229,10 @@
                 <h1 class="hits-title"><strong>Итернет Магазин</strong> Xiaomi</h1>
                 <p class="about-descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim voluptates asperiores nobis voluptatum, ipsam repellat excepturi sit accusamus nesciunt consequuntur, unde consectetur! Necessitatibus in totam beatae velit tenetur deleniti, consequatur ab, veritatis est sequi eum, inventore eligendi accusamus eaque odit obcaecati suscipit. Quisquam accusamus enim impedit et, ullam est accusantium alias, similique ipsa voluptate minus ratione minima fugiat at voluptas corrupti inventore. Quis officia vitae eligendi fugiat minus maiores labore suscipit eveniet cumque. Obcaecati, veritatis! Accusamus, sint expedita repellat ab facere odit nemo ipsa, aliquam facilis temporibus eaque ea nisi quae atque mollitia veniam assumenda ipsam maiores eligendi alias?</p>
               </div>
-              <form class="form" action="#">
+              <form class="form" action="#" method="">
                 <h2 class="hits-title"><strong>ФОРМА ОБРАТНОЙ СВЯЗИ </strong></h2>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="телефон">
+                <input type="text" placeholder="Ваше имя" name="name">
+                <input type="text" placeholder="телефон" name="phone">
                 <textarea name="" cols="30" rows="10" placeholder="Сообщение"></textarea>
                 <input class="btn" type="submit" value="Отправить">
               </form>

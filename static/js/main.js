@@ -15,6 +15,13 @@ $(document).ready(function () {
             slidesToScroll: 1,
         });
     };
+
+    let locDisplay = () => {
+      $('.location').on('click', function() {
+         $('.location-onClick').toggleClass('location-onClick--active'); 
+      });  
+    };
     jsBannerSlider();
     jsHitsSlider();
+    locDisplay();
 });
