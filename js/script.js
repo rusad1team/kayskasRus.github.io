@@ -21,9 +21,4 @@ $(document).ready(function (e) {
 	width();
 });
 
-window.addEventListener('resize', function () { 
-	if ($(window).width() < 450) {
-    "use strict";
-    window.location.reload(); 
-}
-});
+
