@@ -1150,7 +1150,9 @@ footer {
           box-sizing: border-box;
   padding: 8px;
   background: #fff; }
-
+.h2Mobile {
+  display: none;
+}
 .header-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1506,6 +1508,20 @@ footer {
   .nav-top__wrapper {
     visibility: visible;
     opacity: 1; }
+    .h2Mobile {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 29px;
+      color: #231f20;
+      font-size: 21px;
+      font-weight: 700;
+    }
   .sandwich {
     display: block;
     width: 30px;
