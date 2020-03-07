@@ -6,6 +6,32 @@ var destination = $(elementClick).offset().top;
 jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop: destination}, 800);
 return false;
 });
+let tabSlider = function () {
+    $('.tabs-nav').slick({
+    mobileFirst: true,
+    arrows: false,
+    dots: true,
+    appendDots: '.navig-dots2',
+    customPaging: function(slider,i) {
+        return '<div class="navig-dot2"></div>';
+},
+    responsive: [
+        {
+            breakpoint: 801,
+            settings: "unslick",
+            slidesToShow: 3,
+            arrows: false,
+        },
+         {
+            breakpoint: 400,
+            slidesToShow: 1,
+            arrows: false,
+        }
+    ]
+});
+}
+
+
 
 let tab = function () {
     let tabNav = document.querySelectorAll('.tabs-nav__item'),
@@ -35,5 +61,6 @@ let tab = function () {
 };
 
 tab();
+tabSlider();
 });
 
