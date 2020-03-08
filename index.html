@@ -17,13 +17,13 @@
           <div class="header-top">
             <div class="header-top__wrapper">
               <div class="logo"><img src="static/images/general/logo.png" alt=""></div>
-              <div class="header-top__info"><a class="header-top__town header-top__info--link" href="#">Саратов</a><a class="header-top__phone header-top__info--link" href="#">+7 (8452) 53-49-43</a></div>
+              <div class="header-top__info"><a class="header-top__town header-top__info--link" href="#">Саратов</a><a class="header-top__phone header-top__info--link" href="tel:+78452534943">+7 (8452) 53-49-43</a></div>
             </div>
           </div>
           <div class="header-center">
             <div class="header-center__wrapper">
               <h1 class="header-center__title header-center__title--style">Замена счетчиков воды</h1><span class="header-center__titleSpan header-center__title--style">Без обмана</span>
-              <div class="header-center__text">Найдете дешевле - сделаем скидку 5% от цены конкурента!</div><a class="btn header-btn" href="#">Получить цену с учетом скидок</a>
+              <div class="header-center__text">Найдете дешевле - сделаем скидку 5% от цены конкурента!</div><a class="btn header-btn popup-view" href="#callme" data-popup="modal">Получить цену с учетом скидок</a>
               <div class="courierWrapper">
                 <div class="courierLeft"><span class="courierTitle">счетчик + пломба<br>+ пакет документов</span><span class="courierPrice">500</span><span class="courierDescr">руб.</span></div>
                 <div class="courierRight"><span class="courierTitle">работа по замене<br>счетчика + гарантия</span><span class="courierPrice">500</span><span class="courierDescr">руб.</span></div>
@@ -33,14 +33,14 @@
               <div class="nav-wrapper">
                 <nav class="header-bottom__nav nav">
                   <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">Конечные цены</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Галерея работ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Безопасная сделка</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Обращение руководителя</a></li>
+                    <li class="nav-item"><a class="nav-link linkScroll" href="#prices">Конечные цены</a></li>
+                    <li class="nav-item"><a class="nav-link linkScroll" href="#gallery">Галерея работ</a></li>
+                    <li class="nav-item"><a class="nav-link linkScroll" href="#security">Безопасная сделка</a></li>
+                    <li class="nav-item"><a class="nav-link linkScroll" href="#rev">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link linkScroll" href="#director">Обращение руководителя</a></li>
                   </ul>
                 </nav>
-                <div class="mouse-wrapper"><a class="mouse" href="#">
+                <div class="mouse-wrapper"><a class="mouse linkScroll" href="#s-about">
                     <svg class="svg-sprite-icon icon-mouse mouse-down">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#mouse"></use>
                     </svg></a></div>
@@ -50,7 +50,7 @@
         </div>
       </header>
       <div class="content">
-        <section class="s-about">
+        <section class="s-about" id="s-about">
           <div class="about">
             <div class="about-cards">
               <div class="about-card">
@@ -83,7 +83,7 @@
               </div>
             </div>
           </div>
-          <div class="exp padding">
+          <div class="exp padding" id="gallery">
             <div class="container">
               <div class="exp-wrapper sec-text__center">
                 <h2 class="exp-title sec-title">ОПЫТ <span class="double-text__brown">11 ЛЕТ</span></h2>
@@ -93,7 +93,7 @@
             </div>
           </div>
         </section>
-        <section class="s-prices padding bg-dark-section">
+        <section class="s-prices padding bg-dark-section" id="prices">
           <div class="container">
             <div class="prices">
               <div class="sec-text__center">
@@ -159,11 +159,11 @@
                 <div class="prices-tabs__content tab tab-3">3</div>
                 <div class="prices-tabs__content tab tab-4">4</div>
               </div>
-              <div class="btn-wrapper"><a class="btn" href="#">Рассчитать конечную цену заранее</a></div>
+              <div class="btn-wrapper"><a class="btn popup-view" href="#callme" data-popup="modal">Рассчитать конечную цену заранее</a></div>
             </div>
           </div>
         </section>
-        <section class="s-security padding bg-white-section">
+        <section class="s-security padding bg-white-section" id="security">
           <div class="container">
             <div class="security">
               <div class="security-titles sec-text__center">
@@ -253,7 +253,7 @@
             </div>
           </div>
         </section>
-        <section class="s-rev bg-white-section">
+        <section class="s-rev bg-white-section" id="rev">
           <div class="container">
             <div class="rev padding">
               <div class="exp-wrapper sec-text__center">
@@ -264,26 +264,26 @@
             </div>
           </div>
           <div class="about rev-about">
-            <div class="about-cards rev-about__cards"><a class="about-card rev-about__card" href="#"><img src="static/images/general/1.jpg" alt="">
+            <div class="about-cards rev-about__cards"><a class="about-card rev-about__card image-modal" href="#image-modal"><img src="static/images/general/1.jpg" alt="">
                 <div class="rev-about__content">
                   <div class="rev-about__title">Замена счетчиков ГВС и ХВС</div>
                   <div class="rev-about__descr">16.02.2020</div>
-                </div></a><a class="about-card about-card--grey rev-about__card" href="#"><img src="static/images/general/1.jpg" alt="">
+                </div></a><a class="about-card about-card--grey rev-about__card image-modal" href="#image-modal"><img src="static/images/general/2.jpg" alt="">
                 <div class="rev-about__content">
                   <div class="rev-about__title">Замена счетчиков ГВС и ХВС</div>
                   <div class="rev-about__descr">16.02.2020</div>
-                </div></a><a class="about-card rev-about__card" href="#"><img src="static/images/general/1.jpg" alt="">
+                </div></a><a class="about-card rev-about__card image-modal" href="#image-modal"><img src="static/images/general/3.jpg" alt="">
                 <div class="rev-about__content">
                   <div class="rev-about__title">Замена счетчиков ГВС и ХВС</div>
                   <div class="rev-about__descr">16.02.2020</div>
-                </div></a><a class="about-card about-card--grey rev-about__card" href="#"><img src="static/images/general/1.jpg" alt="">
+                </div></a><a class="about-card about-card--grey rev-about__card image-modal" href="#image-modal"><img src="static/images/general/4.jpg" alt="">
                 <div class="rev-about__content">
                   <div class="rev-about__title">Замена счетчиков ГВС и ХВС</div>
                   <div class="rev-about__descr">16.02.2020</div>
                 </div></a></div>
           </div>
         </section>
-        <section class="s-video padding bg-white-section">
+        <section class="s-video padding bg-white-section" id="director">
           <div class="container">
             <div class="video">
               <div class="exp-wrapper sec-text__center">
@@ -292,7 +292,7 @@
               <div class="iFrame-wrapper">
                 <iframe class="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/CgH2jzupeXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="btn-wrapper"><a class="btn btn-brown" href="#">Вызвать мастера сейчас</a></div>
+              <div class="btn-wrapper"><a class="btn btn-brown popup-view" href="#callme" data-popup="modal">Вызвать мастера сейчас</a></div>
             </div>
           </div>
         </section>
@@ -330,7 +330,69 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer><!--popup form-->
+      <div class="callme-popup">
+        <div class="popup-close--2"></div>
+        <div class="popup-form">
+          <div class="popup-form--wrap form-hide">
+            <div class="popup-close"><span></span></div>
+            <div class="popup-form__title">Узнайте окончательную стоимость прямо сейчас</div>
+            <div class="popup-form__desc">Укажите номер и мы свяжемся для оперативного расчета честной и окончательной цены. Гарантируем честный рассчет без уловок!</div>
+            <div class="popup__form">
+              <form class="form-js" id="form_callme" enctype="multipart/form-data" method="post">
+                <div class="popup-form__inputWrapper">
+                  <div class="popup-form__input">
+                    <input class="input-text mask validate" type="text" name="telFF" placeholder="Введите ваш телефон">
+                  </div>
+                  <div class="popup-form__radioButtons"><span class="popup-form__inputSpan">Где Свяжемся: </span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="GSM" id="GSM">
+                      <label for="GSM">Звонок GSM</label>
+                    </div><span></span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="СWhatsApp" id="CWhatsApp">
+                      <label for="CWhatsApp">Звонок WhatsApp</label>
+                    </div><span></span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="СViber" id="CViber">
+                      <label for="CViber">Звонок Viber</label>
+                    </div><span></span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="SMS" id="SMS">
+                      <label for="SMS">SMS</label>
+                    </div><span></span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="CHWhatsApp" id="CHWhatsApp">
+                      <label for="CHWhatsApp">Чат WhatsApp</label>
+                    </div><span></span>
+                    <div class="labelInputs">
+                      <input type="radio" name="messengerFF" value="CHViber" id="CHViber">
+                      <label for="CHViber">Чат Viber</label>
+                    </div><span></span>
+                  </div>
+                  <div class="popup-form__btnWrapper">
+                    <div class="popup-form__btn">
+                      <div class="button btn form-button btn-brown"><span>Отправить</span></div>
+                      <input class="button-submit" type="submit">
+                      <input class="form-metka" type="hidden" name="metkaFF" value="">
+                      <input class="form-city" type="hidden" name="cityFF" value="">
+                    </div>
+                    <div class="popup-form__check">Нажимая на кнопку "Отправить" я соглашаюсь с <a href="/Polozhenie.pdf">Положением об обработки персональных данных</a>, <a href="/Politika.pdf">Политикой конфиденциальности</a> и <a href="/Soglashenie.pdf">Пользовательским соглашением</a>."
+                      <label class="confidencial__checked">
+                        <input type="checkbox" name="checked" value="Согласен" checked=""><span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="popup-form--wrap form-ok">
+            <div class="popup-form__title">Спасибо<br> за обращение</div>
+            <div class="popup-form__desc">Мастер свяжется с вами по указанному номеру<br> в ближайшее время.</div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>
