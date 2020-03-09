@@ -39,10 +39,14 @@ let sliderForAndNav = function () {
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
-	  dots: false,
 	  lazyLoad: 'ondemand',
 	  fade: true,
-	  asNavFor: '.slider-nav'
+	  dots: true,
+	  asNavFor: '.slider-nav',
+	  appendDots: '.navig-dots1',
+    		customPaging: function(slider,i) {
+        return '<div class="navig-dot1"></div>';
+	},
 	});
 	$('.slider-nav').slick({
 	  slidesToShow: 3,
@@ -53,6 +57,17 @@ let sliderForAndNav = function () {
 	  asNavFor: '.slider-for',
 	  centerMode: true,
 	  focusOnSelect: true,
+	  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        settings: "unslick",
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 	});
 }
 
