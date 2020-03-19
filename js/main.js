@@ -16,21 +16,15 @@ $('.mod-titleBox').on('click', function(){
 });
 
 $('.rev').slick({
-        mobileFirst: true,
-        arrows: false,
         adaptiveHeight: true,
+        fade: true,
+        nextArrow: '.navigation--next',
+        prevArrow: '.navigation--prev',
         dots: true,
           appendDots: '.trust-dots',
             customPaging: function(slider,i) {
         return '<div class="trust-dot"></div>';
 },
-        responsive: [
-            {
-                breakpoint: 801,
-                settings: "unslick",
-                slidesToShow: 1,
-            }
-        ]
     });
 
 $('.image-popup-vertical-fit').magnificPopup({
