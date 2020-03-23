@@ -2,678 +2,426 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Курсы</title><!--[if IE]>
+    <title>Главная страница</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css"><!--[if lt IE 9]>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Raleway:400,600,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
   <body class="index-page">
-    <div class="preloader" style="display: none;"><img src="img/preloader.gif" alt=""></div>
     <div class="wrapper">
-      <!--шапка header-->
       <header class="header">
-        <div class="header-top">
-          <div class="container">
-            <div class="main-logo"><a href="/"><img src="img/logo.png" alt="Богданов и партнеры"></a></div>
-            <div class="right-col">
-              <div class="main-menu-button"><span></span></div>
-              <div class="main-menu">
-                <div class="main-navigation">Управление проектами в России с 2002 года</div>
-                <div class="contacts-wrap liteAccordion" style="width: 360px; height: 30px;">
-                  <ol>
-                    <li class="slide">
-                      <h2 class="selected" style="height: 48px; left: 48px; width: 30px;"><i class="main-menu-mail btn-pulse fa fa-envelope"></i></h2>
-                      <div style="width: 264px; left: 0px; padding-left: 48px;"><a href="mailto:info@bogdanov-associates.com">info@bogdanov-associates.com</a></div>
-                    </li>
-                    <li class="slide">
-                      <h2 style="height: 48px; left: 0px; width: 30px;"><i class="main-menu-mobile btn-pulse fa fa-mobile"></i></h2>
-                      <div style="width: 264px; left: 48px; padding-left: 48px;"><a href="tel:+74952233537">+7(495)223-35-37</a></div>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div class="main-mobile-menu">
-                <p class="main-mobile-menu-text">Управление проектами<br> в России с 2002 г.</p><a href="mailto:info@bogdanov-associates.com"><i class="fa fa-envelope"></i> info@bogdanov-associates.com</a><a href="tel:+74952233537"><i class="fa fa-mobile"></i>  +7(495)223-35-37</a>
-                <div class="callback-wrapper">
-                  <div class="banner-left-text">Вся важная информация одним письмом</div>
-                  <form class="callback banner-form" action="post">
-                    <input type="text" placeholder="Ваш e-mail" name="email" required>
-                    <input type="submit" value="Получить">
-                  </form>
-                </div>
-              </div>
-            </div>
+        <div class="container">
+          <div class="header-top">
+            <div class="logo"><img src="static/images/general/logo.png" alt="Store logo"></div>
+            <nav class="nav" id="nav">
+              <div class="sandwich"><span class="sandwich-line"></span></div>
+              <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#s-her">Gifts for Her</a></li>
+                <li class="nav-item"><a class="nav-link" href="#s-him">Gifts for Him</a></li>
+                <li class="nav-item"><a class="nav-link" href="#s-kids">Gifts for Kids</a></li>
+                <li class="nav-item"><a class="nav-link" href="#s-homeWares">Christmas at Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#s-great">Special Deals</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
           </div>
-        </div>
-        <div class="header-center">
-          <div class="container">
-            <div class="header-center__wrapper">
-              <div class="header-center__title">РЕАЛИЗУЙТЕ ПРОЕКТЫ ШАГ ЗА ШАГОМ</div>
-              <h1 class="header-center__h1"> Управление проектами с p3express:<br> онлайн-курc</h1>
-              <div class="in-btnWrapper"><a class="btn popup-view" href="#callme" data-popup="modal">РЕГИСТРАЦИЯ</a></div>
+          <div class="header-center">
+            <h1 class="header-center__title sec-title">Get The Holidays Filling</h1>
+            <h2 class="header-center__h2">Gifts. Decorations. Food & Drinks. Entertaining Ideas & More</h2>
+            <div class="header-center__itemsWrapper">
+              <div class="header-center__item">
+                <svg class="svg-sprite-icon icon-cube header-center__icon header-center__cube">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#cube"></use>
+                </svg>
+                <div class="line"></div>
+                <div class="header-center__text">Free Shipping</div>
+              </div>
+              <div class="header-center__item header-center__item--center">
+                <svg class="svg-sprite-icon icon-dis header-center__icon header-center__money">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#dis"></use>
+                </svg>
+                <div class="line"></div>
+                <div class="header-center__text">Best Price Guaranteed</div>
+              </div>
+              <div class="header-center__item">
+                <svg class="svg-sprite-icon icon-return header-center__icon header-center__cube">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#return"></use>
+                </svg>
+                <div class="line"></div>
+                <div class="header-center__text">Easy Returns</div>
+              </div>
             </div>
+            <div class="btnWrapper"><a class="btn btn-black" href="#">View All Catalogue</a><a class="btn" href="#">Visit Our Store</a></div>
           </div>
         </div>
       </header>
-      <!--end header-->
-
       <div class="content">
-
-        <!-- online -->
-        <section class="s-adv">
+        <section class="s-com">
           <div class="container">
-            <div class="adv">
-              <div class="adv-item">
-                <div class="adv-title">Онлайн</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
+            <div class="com">
+              <div class="com-titleWrapper">
+                <h2 class="sec-title com-title">Christmas is Coming:</h2>
+                <h3 class="com-titleH3">We Are Waiting For the Precious Time</h3>
               </div>
-              <div class="adv-item">
-                <div class="adv-title">Онлайн</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-              <div class="adv-item">
-                <div class="adv-title adv-title__red">Онлайн</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-              <div class="adv-item">
-                <div class="adv-title">Онлайн</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-            </div>
-            <div class="adv-bottom">
-              <h2>Осваивайте ключевые навыки менеджера проекта в лёгкой и доступной форме для решения профессиональных и личных задач. Понятные шаги, инструменты, коммуникации и чёткая структура – фокус этого курса.</h2>
-            </div>
-          </div>
-        </section>
-        <!-- online -->
-
-        <!--Курс для Вас, если:-->
-        <section class="s-for">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title">Курс <strong class="sec-title__strong">для Вас</strong>, если:</h2>
-            </div>
-            <div class="for">
-              <div class="for-item">
-                <svg class="svg-sprite-icon icon-man for-item__icon">
-                  <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
-                </svg>
-                <div class="for-item__descr">Вы – менеджер проекта или тимлид, который любит развитие</div>
-              </div>
-              <div class="for-item">
-                <svg class="svg-sprite-icon icon-target for-item__icon">
-                  <use xlink:href="img/svg/symbol/sprite.svg#target"></use>
-                </svg>
-                <div class="for-item__descr">Вы хотите стать менеджером проекта или тимлидом</div>
-              </div>
-              <div class="for-item">
-                <svg class="svg-sprite-icon icon-team for-item__icon">
-                  <use xlink:href="img/svg/symbol/sprite.svg#team"></use>
-                </svg>
-                <div class="for-item__descr">Вы хотите освоить управление проектами</div>
-              </div>
-              <div class="for-item">
-                <svg class="svg-sprite-icon icon-resume for-item__icon">
-                  <use xlink:href="img/svg/symbol/sprite.svg#resume"></use>
-                </svg>
-                <div class="for-item__descr">Вы хотите замотивировать команду использовать УП</div>
+              <div class="timer-container">
+                <div class="timer" id="timer">
+                  <div class="timer-wrapper">
+                    <div class="timer-group timer-groupD"><span class="days">0</span></div>
+                    <div class="timer-space timer-groupD">:</div>
+                    <div class="timer-group"><span class="hours">13</span></div>
+                    <div class="timer-space">:</div>
+                    <div class="timer-group"><span class="minutes">48</span></div>
+                    <div class="timer-space">:</div>
+                    <div class="timer-group"><span class="seconds">00</span></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <!--Курс для Вас, если:-->
-
-        <!--Что входит в онлайн-курс-->
-        <section class="s-in">
+        <section class="s-welcome">
           <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title">Что входит в онлайн-курс <strong class="sec-title__strong">p3express</strong>?</h2>
+            <div class="welcome">
+              <div class="welcome-left"><img src="static/images/general/storeImg.png" alt=""></div>
+              <div class="welcome-right">
+                <h2 class="sec-title welcome-right__title">Welcome to Bounty Store</h2>
+                <p class="welcome-right__descrBig">Christmas is a family holiday and there are many things that make every home a truly charming place. The Christmas tree, the stockings on a fireplace mantel, the garlands and lights create a special atmosphere, friendly and warm.</p>
+                <p class="welcome-right__descrSmall">All you need for the festive season, from furniture and homewares to great gifts ideas for everyone you could easily find in our store.</p>
+              </div>
             </div>
-            <div class="in">
-              <div class="in-itemsWrapper">
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
+          </div>
+        </section>
+        <section class="s-gift">
+          <div class="container">
+            <div class="gift">
+              <h2 class="sec-title gift-title">Luxury Gift Guide for a Holiday Presents</h2>
+              <p class="gift-descr">We've rounded up great Christmas gift ideas in our Holiday Gift Guide. It's to get a whole lot merrier around here, and we're feeling all warm and fuzzy already -  so let's get gift shopping with our luxury guide to giving!</p><a class="btn" href="#">Get Guide</a>
+            </div>
+          </div>
+        </section>
+        <section class="s-her" id="s-her">
+          <div class="container">
+            <div class="secTitlesWrapper"><img class="secTitlesWrapper__img" src="static/images/general/herIcon.png" alt="">
+              <div class="sec-title__container">
+                <div class="titleLine"></div>
+                <h2 class="sec-title">Fabulous Gifts for Her</h2>
+                <div class="titleLine"></div>
+              </div>
+            </div>
+            <div class="her">
+              <div class="her-wrapper">
+                <div class="her-left">
+                  <div class="her-left__bottom">
+                    <div class="her-left__inBottom">
+                      <div class="her-left__inBottom--text">Christmas is the best season to<br> delight and surprise her</div><a class="btn" href="#">Gifts for Her</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="her-right">
+                  <div class="her-right__itemsWrapper">
+                    <div class="her-right__item her-right__item--first"><img src="static/images/general/herA.png" alt="">
+                      <div class="her-right__item--text"><span class="title">Gold Necklace</span>
+                        <div class="price">
+                          <div class="price-old">$348.99</div>
+                          <div class="price-new">$248.00</div>
+                        </div><a class="btn btn-black" href="#">Buy Now</a>
+                      </div>
+                    </div>
+                    <div class="her-right__item her-right__item--second"><img src="static/images/general/herA.png" alt="">
+                      <div class="her-right__item--text"><span class="title">Bedding</span>
+                        <div class="price">
+                          <div class="price-old">$78.99</div>
+                          <div class="price-new">$48.00</div>
+                        </div><a class="btn btn-black" href="#">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="her-right__itemBig"><img src="static/images/general/herA.png" alt="">
+                    <div class="her-right__item--text"><span class="title">Beauty Gift Sets for Her</span>
+                      <div class="price">
+                        <div class="price-old">$98.99</div>
+                        <div class="price-new">$56.00</div>
+                      </div><a class="btn btn-black" href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-him" id="s-him">
+          <div class="container">
+            <div class="secTitlesWrapper"><img class="secTitlesWrapper__img" src="static/images/general/himIcon.png" alt="">
+              <div class="sec-title__container">
+                <div class="titleLine"></div>
+                <h2 class="sec-title">Best Gifts for Him</h2>
+                <div class="titleLine"></div>
+              </div>
+            </div>
+            <div class="him">
+              <div class="him-left">
+                <div class="him-left__item itemBox him-left__item1">
+                  <div class="him-left__item--top him-left__item--top1 itemBox-top"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="him-left__item--bottom itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Watch for Him</div>
+                      <div class="price">
+                        <div class="price-old">$348.99</div>
+                        <div class="price-new">$250.00</div>
+                      </div>
+                    </div><a class="btn btn-border" href="#">Buy Now</a>
+                  </div>
+                </div>
+                <div class="him-left__item itemBox">
+                  <div class="him-left__item--top him-left__item--top2 itemBox-top"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="him-left__item--bottom itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Gift Sets for Him</div>
+                      <div class="price">
+                        <div class="price-old">$98.99</div>
+                        <div class="price-new">$48.59</div>
+                      </div>
+                    </div><a class="btn btn-border" href="#">Buy Now</a>
+                  </div>
+                </div>
+                <div class="him-left__item itemBox">
+                  <div class="him-left__item--top him-left__item--top3 itemBox-top"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="him-left__item--bottom itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Cufflinks</div>
+                      <div class="price">
+                        <div class="price-old">$358.99</div>
+                        <div class="price-new">$180.99</div>
+                      </div>
+                    </div><a class="btn btn-border" href="#">Buy Now</a>
+                  </div>
+                </div>
+                <div class="him-left__item itemBox">
+                  <div class="him-left__item--top him-left__item--top4 itemBox-top"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="him-left__item--bottom itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Shirt</div>
+                      <div class="price">
+                        <div class="price-old">$68.99</div>
+                        <div class="price-new">$38.99</div>
+                      </div>
+                    </div><a class="btn btn-border" href="#">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="him-right">
+                <div class="him-right__text"><span class="him-right__descr">Choose something special for the dearest man in your life!</span><a class="btn btn-black" href="#">Gifts for Him</a></div>
+                <div class="him-right__imgWrapper"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-kids" id="s-kids">
+          <div class="container">
+            <div class="secTitlesWrapper"><img class="secTitlesWrapper__img" src="static/images/general/kidsIcon.png" alt="">
+              <div class="sec-title__container">
+                <div class="titleLine"></div>
+                <h2 class="sec-title">Marvelous Gifts for Kids</h2>
+                <div class="titleLine"></div>
+              </div>
+            </div>
+            <div class="kids">
+              <div class="kids-itemBig"><img src="static/images/general/herA.png" alt="">
+                <div class="kids-itemBig__text"><span class="title sec-title">Christmas Gifts For Childrens</span>
+                  <p class="descr">Christmas is the most wonderful & magic season for children</p><a class="btn" href="#">Gifts for Kids & Children</a>
+                </div>
+              </div>
+              <div class="kids-wrapper">
+                <div class="kids-item itemBox">
+                  <div class="itemBox-top itemBox-top1"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Hoodie</div>
+                      <div class="price">
+                        <div class="price-old">$48.00</div>
+                        <div class="price-new">$15.99</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kids-item itemBox">
+                  <div class="itemBox-top itemBox-top2"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Christmas Story</div>
+                      <div class="price">
+                        <div class="price-old">$52.99</div>
+                        <div class="price-new">$18.59</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kids-item itemBox">
+                  <div class="itemBox-top itemBox-top3"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Golden Bracelet</div>
+                      <div class="price">
+                        <div class="price-old">$218.99</div>
+                        <div class="price-new">$168.95</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kids-item itemBox">
+                  <div class="itemBox-top itemBox-top4"><img src="static/images/general/herA.png" alt=""></div>
+                  <div class="itemBox-bottom">
+                    <div class="itemBox-bottom__text">
+                      <div class="itemBox-bottom__title">Video Playsets</div>
+                      <div class="price">
+                        <div class="price-old">$92.00</div>
+                        <div class="price-new">$50.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-homeWares" id="s-homeWares">
+          <div class="container">
+            <div class="secTitlesWrapper"><img class="secTitlesWrapper__img" src="static/images/general/HomewI.png" alt="">
+              <div class="sec-title__container">
+                <div class="titleLine"></div>
+                <h2 class="sec-title">Christmas Homewares</h2>
+                <div class="titleLine"></div>
+              </div>
+            </div>
+            <div class="homeWares">
+              <div class="kids-itemBig homeWares-item">
+                <div class="kids-itemBig__text homeWares-item__text"><span class="title sec-title">Christmas at Home</span>
+                  <p class="descr">Room Decorations. Bedding. Furniture</p><a class="btn" href="#">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-great" id="s-great">
+          <div class="container">
+            <div class="great">
+              <div class="great-top">
+                <h2 class="sec-title great-top__title">From great gifts to party food be inspired this festive season!</h2><a class="btn" href="#">Shop Now</a>
+              </div>
+              <div class="great-items">
+                <div class="great-item"><img src="static/images/general/g1.jpg" alt="">
+                  <div class="great-item__title">Special Gifts</div>
+                </div>
+                <div class="great-item"><img src="static/images/general/g2.jpg" alt="">
+                  <div class="great-item__title">Gifts for Everyone</div>
+                </div>
+                <div class="great-item"><img src="static/images/general/g3.jpg" alt="">
+                  <div class="great-item__title">Food & Wine</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-offers">
+          <div class="container">
+            <div class="secTitlesWrapper">
+              <div class="sec-title__container offers-container">
+                <div class="titleLine"></div>
+                <h2 class="sec-title">Bounty Store Christmas Offers</h2>
+                <div class="titleLine"></div>
+              </div>
+            </div>
+            <div class="offers">
+              <div class="offers-item offers-item__first">
+                <div class="offers-item__imgWrapper"><img class="offers-item__img" src="static/images/general/o3.png" alt=""></div>
+                <div class="offers-item__textWrapper">
+                  <div class="offers-item__title sec-title">Buy 3 Items for 2</div>
+                  <div class="offers-item__text">Only From December 24th  to December 26th</div>
+                </div>
+              </div>
+              <div class="offers-item offers-item__second">
+                <div class="offers-item__imgWrapper"><img class="offers-item__img" src="static/images/general/o4.png" alt=""></div>
+                <div class="offers-item__textWrapper">
+                  <div class="offers-item__title sec-title">35% Off on All Mobile Phones</div>
+                  <div class="offers-item__text">Only From December 24th  to December 26th</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-contacts" id="contacts">
+          <div class="cart__maps">
+            <div class="map" id="map" data-coords="55.906830, 37.438457"></div>
+          </div>
+          <div class="contacts">
+            <div class="container">
+              <div class="contacts-wrapper">
+                <h2 class="sec-title contacts-title">Visit Bounty Store Today & Buy the Best Gifts for the Best Price!</h2>
+                <div class="contacts-items">
+                  <div class="contacts-hour contacts-item">
+                    <svg class="svg-sprite-icon icon-clock contacts-icon contacts-hour__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#clock"></use>
+                    </svg><span class="text"><strong>Hours of Operation:</strong>Monday – Sunday 9:00 am – 8:00 pm</span>
+                  </div>
+                  <div class="contacts-loc contacts-item">
+                    <svg class="svg-sprite-icon icon-loc contacts-icon contacts-loc__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#loc"></use>
+                    </svg><span class="text"><strong>Address:</strong>220 E 55th St, New York, NY 10022, USA</span>
+                  </div>
+                  <div class="contacts-call contacts-item">
+                    <svg class="svg-sprite-icon icon-call contacts-icon contacts-call__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#call"></use>
                     </svg>
+                    <div class="text"><strong >Phone:</strong></div><a class="text-link" href="#">(123) 456-7890</a>
                   </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
+                  <div class="contacts-mail contacts-item">
+                    <svg class="svg-sprite-icon icon-mail contacts-icon contacts-mail__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
                     </svg>
+                    <div class="text"><strong>Email:</strong> </div><a class="text-link" href="#">demo@demolonk.com</a>
                   </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
-                    </svg>
-                  </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
-                    </svg>
-                  </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
-                    </svg>
-                  </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-                <div class="in-item">
-                  <div class="in-item__iconWrapper">
-                    <svg class="svg-sprite-icon icon-man in-item__icon">
-                      <use xlink:href="img/svg/symbol/sprite.svg#man"></use>
-                    </svg>
-                  </div>
-                  <div class="in-item__text">
-                    <div class="in-item__title">40+ видео</div>
-                    <p>В формате видеоуроков (лектор+презентация) и видеоинструкций</p>
-                  </div>
-                </div>
-              </div>
-              <div class="in-btnWrapper"><a class="btn popup-view" href="#callme" data-popup="modal">ПОЛУЧИТЬ ДОСТУП</a></div>
-            </div>
-          </div>
-        </section>
-        <!--Что входит в онлайн-курс-->
-        
-        <!--Сколько я буду учиться?-->
-        <section class="s-adv">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Сколько</strong> я буду учиться? </h2>
-            </div>
-            <div class="adv">
-              <div class="adv-item">
-                <div class="adv-title">3-15 минут</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-              <div class="adv-item">
-                <div class="adv-title">3-15 минут</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-              <div class="adv-item">
-                <div class="adv-title adv-title__red">3-15 минут</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
-              </div>
-              <div class="adv-item">
-                <div class="adv-title">3-15 минут</div>
-                <div class="adv-descr">Не нужно ждать старта, курс открыт</div>
+                </div><a class="btn" href="#">Our Online Store</a>
               </div>
             </div>
           </div>
         </section>
-        <!--Сколько я буду учиться?-->
-
-        <!--Модули онлайн-курса-->
-        <section class="s-mod">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Модули</strong> онлайн-курса <strong class="sec-title__strong">p3express</strong></h2>
-            </div>
-            <div class="mod">
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox bb"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab bbt"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-            </div>
-            <div class="in-btnWrapper"><a class="btn popup-view" href="#callme" data-popup="modal">ПОЛУЧИТЬ ДОСТУП</a></div>
-          </div>
-        </section>
-        <!--Модули онлайн-курса-->
-
-        <!--Сертификат о прохождении-->
-        <section class="s-sert">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Сертификат</strong> о прохождении</h2>
-            </div>
-            <div class="sert">
-              <div class="sert-left">
-                <div class="sert-left__text">
-                  <svg class="svg-sprite-icon icon-done sert-left__text--icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#done"></use>
-                  </svg>
-                  <p>Верифицирован европейскими экспертами – авторами фреймворка</p>
-                </div>
-                <div class="sert-left__text">
-                  <svg class="svg-sprite-icon icon-done sert-left__text--icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#done"></use>
-                  </svg>
-                  <p>Верифицирован европейскими экспертами – авторами фреймворка</p>
-                </div>
-                <div class="sert-left__text">
-                  <svg class="svg-sprite-icon icon-done sert-left__text--icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#done"></use>
-                  </svg>
-                  <p>Верифицирован европейскими экспертами – авторами фреймворка</p>
-                </div>
-                <div class="sert-left__text">
-                  <svg class="svg-sprite-icon icon-done sert-left__text--icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#done"></use>
-                  </svg>
-                  <p>Верифицирован европейскими экспертами – авторами фреймворка</p>
-                </div>
-                <div class="sert-left__text">
-                  <svg class="svg-sprite-icon icon-done sert-left__text--icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#done"></use>
-                  </svg>
-                  <p>Верифицирован европейскими экспертами – авторами фреймворка</p>
-                </div>
-              </div>
-              <div class="sert-right"><a class="image-popup-vertical-fit" href="img/sert.png"><img src="img/sert.png"></a></div>
-            </div>
-          </div>
-        </section>
-        <!--Сертификат о прохождении-->
-        
-
-        <!--Авторы онлайн-курса-->
-        <section class="s-avtor">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Авторы</strong> онлайн-курса</h2>
-            </div>
-            <div class="avtor">
-              <div class="avtor-left"><img src="img/vadim.png" alt=""></div>
-              <div class="avtor-right"><span class="avtor-right__name">ВАДИМ БОГДАНОВ</span><span class="avtor-right__prof">Эксперт по построению офисов управления проектами.</span>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, et.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, et.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, et.</li>
-                </ul><a class="avtor-link" href="#">унать больше</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Авторы онлайн-курса-->
-        
-
-        <!--Видео-->
-        <section class="s-about s-top">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Эпизоды</strong> курса</h2>
-            </div>
-            <div class="about">
-              <iframe height="594" src="https://www.youtube.com/embed/xbnMMZ3tc0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><a class="btn popup-view" href="#callme" data-popup="modal">РЕГИСТРАЦИЯ</a>
-            </div>
-          </div>
-        </section>
-        <!--Видео-->
-        
-
-         <!--Отзывы-->
-        <section class="s-rev s-top">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Отзывы</strong></h2>
-            </div>
-            <div class="rev-wrapper">
-              <div class="navigation-wrapper">
-                <div class="navigation navigation--prev">
-                  <img src="img/next.png" alt="" class="icon-left-arrow navigation-icon">
-                </div>
-                <div class="navigation navigation--next">
-                  <img src="img/next.png" alt="" class="icon-right-arrow navigation-icon">
-                </div>
-              </div>
-              <div class="rev">
-              <div class="rev-item">
-                <div class="rev-item__imgWrapper"><img src="img/reviews/s5reviews_microsoft.png" alt=""></div>
-                <div class="rev-item__text">
-                  <!-- тут должность и название фирмы по необходимости
-                  <span class="rev-item__title">Александр Долгих</span><span class="rev-item__firm"> ГК Бизнес-Сервис</span>-->
-
-                  <p>“Представительство компании Майкрософт выражает благодарность компании «Богданов и партнеры» и лично Вадиму Богданову за обучение сотрудников...
-                  ”</p>
-                  <div class="rev-item__buttons">
-                  <!--ссылка popup для отзыва-->
-                  <a href="img/bgHeader.jpg" class="btn rev-item__btn rev-item__btnPopup image-popup-vertical-fit">Посмотреть отзыв полностью
-                  </a>
-
-                  <a href="http://www.vadimbogdanov.ru/reviews.html" target="_blank" class="btn rev-item__btnTarget rev-item__btn">Посмотреть все отзывы</a>
-                </div>
-                </div>
-              </div>
-              <div class="rev-item">
-                <div class="rev-item__imgWrapper"><img src="img/reviews/s5reviews_spartak.png" alt=""></div>
-
-                
-                <div class="rev-item__text">
-                <!-- тут должность и название фирмы по необходимости
-                  <span class="rev-item__title">Александр Долгих</span><span class="rev-item__firm"> ГК Бизнес-Сервис</span>-->
-
-
-                  <p>“Руководство компании ООО «Стадион Спартак» выражает благодарность консультантам компании «Богданов и партнеры»...”</p>
-                </div>
-                <div class="rev-item__buttons">
-                  <!--ссылка popup для отзыва-->
-                  <a href="img/bgHeader.jpg" class="btn rev-item__btn rev-item__btnPopup image-popup-vertical-fit">Посмотреть отзыв полностью
-                  </a>
-                  <a href="http://www.vadimbogdanov.ru/reviews.html" target="_blank" class="btn rev-item__btnTarget rev-item__btn">Посмотреть все отзывы</a>
-                </div>
-              </div>
-              <div class="rev-item">
-                <div class="rev-item__imgWrapper"><img src="img/reviews/s5reviews_tihvin.png" alt=""></div>
-                <div class="rev-item__text">
-                  <!-- тут должность и название фирмы по необходимости
-                  <span class="rev-item__title">Александр Долгих</span><span class="rev-item__firm"> ГК Бизнес-Сервис</span>-->
-
-                  <p>“Благодарим компанию «Богданов и партнеры» за  качественно проведенное обучение...”</p>
-                  <div class="rev-item__buttons">
-                  <!--ссылка popup для отзыва-->
-                  <a href="img/bgHeader.jpg" class="btn rev-item__btn rev-item__btnPopup image-popup-vertical-fit">Посмотреть отзыв полностью
-                  </a>
-
-                  <a href="http://www.vadimbogdanov.ru/reviews.html" target="_blank" class="btn rev-item__btnTarget rev-item__btn">Посмотреть все отзывы</a>
-                </div>
-                </div>
-              </div>
-              <div class="rev-item">
-                <div class="rev-item__imgWrapper"><img src="img/reviews/s5reviews_bank.png" alt=""></div>
-                <div class="rev-item__text">
-                 <!-- тут должность и название фирмы по необходимости
-                  <span class="rev-item__title">Александр Долгих</span><span class="rev-item__firm"> ГК Бизнес-Сервис</span>-->
-
-                  <p>“Департамент информационных систем выражает благодарность за отлично проведенное  сотрудников департамента...”</p>
-
-                <div class="rev-item__buttons">
-                  <!--ссылка popup для отзыва-->
-                  <a href="img/bgHeader.jpg" class="btn rev-item__btn rev-item__btnPopup image-popup-vertical-fit">Посмотреть отзыв полностью
-                  </a>
-
-                  <a href="http://www.vadimbogdanov.ru/reviews.html" target="_blank" class="btn rev-item__btnTarget rev-item__btn">Посмотреть все отзывы</a>
-                </div>
-
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="trust-dots"></div>
-          </div>
-        </section>
-        <!--Отзывы-->
-        
-
-        <!--Обучение прошли-->
-        <section class="s-partners s-top">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">Обучение</strong> прошли</h2>
-            </div>
-            <div class="partner">
-              <div class="partner-col">
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/addgroup.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/A-group.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"></div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/alcon.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1 t595__line_vertical_1-dn"></div>
-                </div>
-                <div class="t-clear t595__line t595__line_horizontal t595__line_horizontal-dn"></div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/alwin.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/ap.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"><img src="img/reviews/atommash.png" alt=""></div>
-                <div class="t-clear t595__line t595__line_horizontal"></div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/bank-RF.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/basf.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/bash-group.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1 t595__line_vertical_1-dn"></div>
-                </div>
-                <div class="t-clear t595__line t595__line_horizontal t595__line_horizontal-dn"></div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/beeline.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/ChTPZ.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/compass-plus.png" alt=""></div>
-                <div class="t-clear t595__line t595__line_horizontal"></div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/danon.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/dekra_s.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/dixis.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1 t595__line_vertical_1-dn"></div>
-                </div>
-                <div class="t-clear t595__line t595__line_horizontal t595__line_horizontal-dn"></div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/dixis.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/danon.png" alt="">
-                  <div class="t595__line t595__line_vertical t595__line_vertical_1"> </div>
-                </div>
-                <div class="t-col t595__item t595__item_6-in-row"> <img src="img/reviews/dekra_s.png" alt=""></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Обучение прошли-->
-
-        <!--Доступ к курсам-->
-        <section class="s-about s-top">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title">Доступ к <strong class="sec-title__strong">курсам</strong></h2>
-            </div>
-            <div class="choise">
-              <div class="choise-item mrBlock">
-                <div class="choise__top">
-                  <div class="choise__top-title">Базовый: только уроки</div>
-                  <div class="choise__top-price">14 000 руб.*</div>
-                  <div class="choise__top-garant">Оплата на сайте, доступна рассрочка 6 месяцев<br> Гарантия возврата 14 дней</div>
-                </div>
-                <div class="choise__bottom">
-                  <ul>
-                    <li>Доступ к урокам</li>
-                    <li>Доступ к урокам</li>
-                    <li>Доступ к урокам</li>
-                  </ul><span>*стоимость для юрлица – 22 000 руб.</span><a class="btn popup-view" href="#callme" data-popup="modal">Купить сейчас</a>
-                </div>
-              </div>
-              <div class="choise-item mlBlock">
-                <div class="choise__top">
-                  <div class="choise__top-title">Базовый: только уроки</div>
-                  <div class="choise__top-price">14 000 руб.*</div>
-                  <div class="choise__top-garant">Оплата на сайте, доступна рассрочка 6 месяцев<br> Гарантия возврата 14 дней</div>
-                </div>
-                <div class="choise__bottom">
-                  <ul>
-                    <li>Доступ к урокам</li>
-                    <li>Доступ к урокам</li>
-                    <li>Доступ к урокам</li>
-                  </ul><span>*стоимость для юрлица – 22 000 руб.</span><a class="btn popup-view" href="#callme" data-popup="modal">Купить сейчас</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Доступ к курсам-->
-        
-
-        <!--Вопросы и ответы-->
-        <section class="s-faq s-top">
-          <div class="container">
-            <div class="sec-title__wrapper">
-              <h2 class="sec-title"><strong class="sec-title__strong">FAQ</strong></h2>
-            </div>
-            <div class="faq mod">
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-              <div class="mod-titleBox bb"><span class="mod-titleBox__text"><strong>Модуль.</strong> Подготовка проекта</span>
-                <div class="mod-titleBox__icon--wrapper">
-                  <svg class="svg-sprite-icon icon-plus mod-titleBox__icon">
-                    <use xlink:href="img/svg/symbol/sprite.svg#plus"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="mod-tab bbt"><span class="mod-tab__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum!</span></div>
-            </div>
-            <div class="in-btnWrapper"><a class="btn popup-view" href="#callme" data-popup="modal">Задать вопрос</a></div>
-          </div>
-        </section>
-         <!--Вопросы и ответы-->
-
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
       </div>
-       <!--footer-->
       <footer class="footer">
         <div class="container">
-          <div class="left-col">
-            <div class="img-wrapper"><a href="/"><img src="img/logo.png" alt="Богданов и партнеры - курсы по управлению проектами с 2002 года."></a></div>
-            <div class="footer-social"><a target="_blank" href="https://www.facebook.com/Управление-проектами-347717151974512/"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.youtube.com/channel/UC4YDXxeTT8SKD0dqZLkLh1w"><i class="fa fa-youtube"></i></a><a target="_blank" href="http://pm-train.ru/article-detail.html?id=3667"><i class="fa fa-cc-visa"></i></a><a target="_blank" href="http://pm-train.ru/article-detail.html?id=3667"><i class="fa fa-cc-mastercard"></i></a></div>
-          </div>
-          <div class="right-col">
-            <div class="callback-wrapper">
-              <div class="form banner-form" method="post" action="http://subscribe.bogdanov-associates.com/crm/pmt.asp" target="blank">
-                <input type="email" placeholder="Ваш e-mail" name="email" required>
-                <input type="submit" value="узнать подробнее">
-              </div>
-            </div>
-          </div>
-          <div class="mobile-menu">
-            <ul>
-              <li><a href="/dlya-chastnikh-lits.html">Частным лицам</a></li>
-              <li><a href="/dlya-org.html">Организациям</a></li>
-              <li><a href="/dlya-gossektora.html">Госслужащим</a></li>
-              <li><a href="/dlya-partnerov.html">Партнерам</a></li>
-            </ul>
-          </div>
+          <div class="logo"><img src="static/images/general/logoW.png" alt=""></div>
+          <div class="footer-social"><a class="footer-social_iconWrapper" href="#">
+              <svg class="svg-sprite-icon icon-twit footer-social__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#twit"></use>
+              </svg></a><a class="footer-social_iconWrapper" href="#">
+              <svg class="svg-sprite-icon icon-f footer-social__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#f"></use>
+              </svg></a><a class="footer-social_iconWrapper" href="#">
+              <svg class="svg-sprite-icon icon-pi footer-social__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#pi"></use>
+              </svg></a><a class="footer-social_iconWrapper" href="#">
+              <svg class="svg-sprite-icon icon-insta footer-social__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#insta"></use>
+              </svg></a><a class="footer-social_iconWrapper" href="#">
+              <svg class="svg-sprite-icon icon-in footer-social__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#in"></use>
+              </svg></a></div>
+          <div class="footer-copy">Copyright © 2020 Privacy Policy. </div>
         </div>
       </footer>
-    </div>
-    <!--popup -->
-      <div class="callme-popup">
-         <div class="popup-close--2"></div>
-         <div class="popup-close"><span></span></div>
-         <div class="popup-form">
-            <div class="popup-form--wrap form-hide">
-               <div class="popup-form__title">Введите свои данные</div>
-               <div class="popup-form__desc">Мы свяжемся с вами, ответим<br> на ваши вопросы!</div>
-               <div class="popup__form">
-                  <form id="form_callme" class="form-js" enctype="multipart/form-data" method="post">
-                     <div class="popup-form__input">
-                        <input type="text" name="nameFF" placeholder="Введите ваше имя" class="input-text">
-                     </div>
-                     <div class="popup-form__input">
-                        <input type="text" name="telFF" placeholder="Введите ваш телефон" class="input-text mask validate">
-                     </div>
-                     <div class="popup-form__btn">
-                        <div class="button btn form-button"><span>Получить консультацию</span></div>
-                        <input type="submit" class="button-submit">
-                        <input type="hidden" name="metkaFF" class="form-metka" value=''>
-                        <input type="hidden" name="cityFF" class="form-city" value="">
-                     </div>
-                     <div class="popup-form__check">
-                        <label class="confidencial__checked">
-                        <input type="checkbox" name="checked" value="Согласен" checked=""><span></span>
-                        </label>
-                        Нажимая на кнопку, вы принимаете <a href="/politica_2.html">условия</a> обработки персональных данных
-                     </div>
-                  </form>
-               </div>
-            </div>
-            <div class="popup-form--wrap form-ok">
-               <div class="popup-form__title">Спасибо<br> за обращение</div>
-               <div class="popup-form__desc">Менеджер свяжется с вами по указанному номеру<br> в ближайшее время.</div>
-            </div>
-         </div>
+      <div class="toTop">
+        <svg class="svg-sprite-icon icon-up toTop-icon">
+          <use xlink:href="static/images/svg/symbol/sprite.svg#up"></use>
+        </svg>
       </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>
