@@ -11,7 +11,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="index-page">
+  <body class="index-page" onload="hidePreloader();">
+    <div class="preloader-wrapper" id="preloader">
+      <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4"/>
+        </svg>
+      </div>
+      <p>
+        Загрузка...
+      </p>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="container">

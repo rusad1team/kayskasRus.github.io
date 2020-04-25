@@ -1,4 +1,15 @@
+function hidePreloader() {
+      let preloader = document.getElementById('preloader')
+      preloader.style.opacity = "0"; //fade out transition
+      setTimeout(function() {
+        preloader.style.display = "none";
+      }, 2000);
+    }
+
+
 $(document).ready(function () {
+
+
 //скролл
 let scrollLinks = function() {
   $('.nav-link').click(function (){
@@ -116,6 +127,7 @@ let scrollM1 = function() {
     console.log(t1.progress());
   }
 };
+
 
 numbers();
 jsSlider();
