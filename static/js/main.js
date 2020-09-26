@@ -58,8 +58,9 @@ $('.sandwich').on('click', function() {
   $('.nav-wrapper').fadeToggle();
   $('.sandwich-line').toggleClass('sandwich--active');
 });
-
-// Скрыть блок с категориями, по клику вне блока
+function windowSize(){
+  if ($(window).width() <= '768'){
+      // Скрыть блок с категориями, по клику вне блока
 let btnCategories = $(".sandwich"); // указываем кнопку
 let categories = $(".nav-wrapper");
 
@@ -73,6 +74,23 @@ $(document).mouseup(function (e) { // событие клика по веб-до
     $('.sandwich-line').removeClass('sandwich--active');
   }
 });
+  } 
+}
+
+$(window).on('load resize',windowSize);
+
+//load more
+
+    $(function(){
+      $(".ourProd-item").slice(0, 4).css('display', 'flex'); // select the first ten
+      $("#load").on('click', function(e){ // click event for load more
+          e.preventDefault();
+          $(".ourProd-item:hidden").slice(0, 2).css('display', 'flex'); // select next 10 hidden divs and show them
+          if($(".ourProd-item:hidden").length == 0){ // check if any hidden divs still exist
+              $('#load').addClass('load-none');
+          }
+      });
+  });
 
 $('.popup-modal').magnificPopup({
   type: 'inline',
