@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 //скролл
 $('.btnScroll').click(function (){
@@ -51,17 +52,27 @@ $('.js-banner-slider').slick({
     focusOnSelect: true,
   });
 
-let sanwichToggle = function() {
-    $('.sandwich').on('click', function(){
-       $('.sandwich-line').toggleClass('sandwich--active');
-       $('.nav-wrapper').fadeToggle('slow'); 
-    });
-};
 
+// Открыть/Закрыть меню с категориями
+$('.sandwich').on('click', function() {
+  $('.nav-wrapper').fadeToggle();
+  $('.sandwich-line').toggleClass('sandwich--active');
+});
 
+// Скрыть блок с категориями, по клику вне блока
+let btnCategories = $(".sandwich"); // указываем кнопку
+let categories = $(".nav-wrapper");
 
-
-sanwichToggle();
+$(document).mouseup(function (e) { // событие клика по веб-документу
+  if ( ! btnCategories.is(e.target) && btnCategories.has(e.target).length === 0 &&
+       // если клик был не по нашему блоку
+       ! categories.is(e.target) && categories.has(e.target).length === 0
+       // и не по его дочерним элементам
+     ) {
+    categories.fadeOut(); // скрываем его
+    $('.sandwich-line').removeClass('sandwich--active');
+  }
+});
 
 $('.popup-modal').magnificPopup({
   type: 'inline',
