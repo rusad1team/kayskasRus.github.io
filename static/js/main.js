@@ -59,19 +59,8 @@ let sanwichToggle = function() {
 };
 
 
-function windowSize(){
-  if ($(window).width() <= '768'){
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-      var div = $(".nav-wrapper"); // тут указываем ID элемента
-      if (!div.is(e.target) // если клик был не по нашему блоку
-          && div.has(e.target).length === 0) { // и не по его дочерним элементам
-        div.hide(); // скрываем его
-        $('.sandwich-line').removeClass('sandwich--active');
-      }
-    });
-  } 
-}
-$(window).on('load resize',windowSize);
+
+
 sanwichToggle();
 
 $('.popup-modal').magnificPopup({
