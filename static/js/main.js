@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 //скролл
-$('.btnScroll').click(function (){
+$('.btnScroll').on('click', function (){
 var elementClick = $(this).attr("href");
 var destination = $(elementClick).offset().top;
 jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop: destination}, 800);
@@ -55,16 +55,21 @@ $('.js-banner-slider').slick({
 
 // Открыть/Закрыть меню с категориями
 $('.sandwich').on('click', function() {
-  $('.nav-wrapper').fadeToggle();
+  $('.nav-wrapper').fadeToggle(300, function() {
+    if($(this).css('display') === 'none') {
+      $(this).removeAttr('style');
+    }
+  });
   $('.sandwich-line').toggleClass('sandwich--active');
 });
 function windowSize(){
-  if ($(window).width() <= '768'){
+
       // Скрыть блок с категориями, по клику вне блока
 let btnCategories = $(".sandwich"); // указываем кнопку
 let categories = $(".nav-wrapper");
 
-$(document).mouseup(function (e) { // событие клика по веб-документу
+$(document).on('mouseup', function (e) { // событие клика по веб-документу
+  if ($(window).width() <= '768'){
   if ( ! btnCategories.is(e.target) && btnCategories.has(e.target).length === 0 &&
        // если клик был не по нашему блоку
        ! categories.is(e.target) && categories.has(e.target).length === 0
@@ -73,11 +78,12 @@ $(document).mouseup(function (e) { // событие клика по веб-до
     categories.fadeOut(); // скрываем его
     $('.sandwich-line').removeClass('sandwich--active');
   }
+}
 });
-  } 
+
 }
 
-$(window).on('load resize',windowSize);
+$(window).on('load resize', windowSize);
 
 //load more
 
