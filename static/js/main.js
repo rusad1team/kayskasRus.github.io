@@ -2,7 +2,15 @@ $(document).ready(function () {
 
 $('.js-sert-slider').slick({
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
+    nextArrow: $('.next'),
+    responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            adaptiveHeight: true,
+          }
+        }
+      ]
 });
 
 let sanwichToggle = function() {
