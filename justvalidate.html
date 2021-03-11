@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+
+  </head>
+  <body class="index-page">
+    <form  method="post" enctype="multipart/form-data">
+      <div class="hide">
+        <input type="tel" name="phone" required="" data-validate-field="tel"  placeholder="имя">
+      <button>JR</button>
+      </div>
+      <div class="message"></div>
+      <div class="show">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, amet!</p>
+      </div>
+
+    </form>
+    <style>
+      .show {
+        display: none;
+      }
+    </style>
+    
+    <script type="text/javascript" src="inputmask.min.js"></script>
+    <script src="just-validate.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script>
+      
+         let selector = document.querySelectorAll('input[type="tel"]');
+         let tel = new Inputmask("+7 (999) 999-99-99");
+         tel.mask(selector);   
+        
+        let validateForms = function(selector, rules, succesModal, yaGoal) {
+          new window.JustValidate(selector, {
+            rules: rules,
+            messages: {
+            tel: "asdasdasd",
+          },
+            submitHandler: function(form) {
+
+              $('.hide').hide();
+              $('.show').show();
+              let formData = new FormData(form);
+              let xhr = new XMLHttpRequest();
+
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                  if (xhr.status === 200) {
+                    console.log('отправлено');
+                  }
+                }
+              }
+
+              xhr.open('POST', 'mail.php', true);
+              xhr.send(formData);
+
+              form.reset();
+            }
+          });
+        }
+        validateForms('form', {
+          tel: {required: true, strength: {custom: '[^_]$'}}
+        })
+    </script>
+  </body>
+</html>
